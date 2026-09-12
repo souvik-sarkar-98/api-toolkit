@@ -22,6 +22,7 @@
     "release:publish": "changeset publish",
     "release:ci": "npm run type-check && npm run release:build && npm run release:publish",
     "release": "npm run release:ci",
+    "release:beta": "npm run type-check && npm run release:build && changeset publish --tag beta",
     "watch:packages": "turbo watch build --filter=./packages/*",
     "start:debug": "npm run start:debug --workspace=apps/api && start npm run watch:packages ",
     "start:dev": "start npm run watch:packages && npm run dev --workspace=apps/api"

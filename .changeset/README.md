@@ -26,15 +26,7 @@ This monorepo uses [Changesets](https://github.com/changesets/changesets) for in
    npm run release
    ```
 
-   Builds the monorepo, then publishes every package with a pending version bump.
-
-4. **Publish a single package** (manual / hotfix):
-
-   ```powershell
-   npm run publish:package -- @api-toolkit/nestjs-shared-correspondence
-   ```
-
-   Builds that workspace and its dependencies, then runs `npm publish`.
+   Type-checks, builds the packages, then publishes every package with a pending version bump.
 
 ## Registry
 
@@ -59,4 +51,4 @@ In CI, set `NPM_TOKEN` to an npm automation token with publish rights for that o
 - Internal package dependencies use `"*"` for npm workspace linking during development.
   `npm run version-packages` (Changesets) rewrites these to semver ranges (e.g. `^1.0.1`) in published manifests.
 - `changeset status` requires a git repository with a `main` branch synced to remote.
-- `apps/api` is excluded from versioning via the `ignore` list in `.changeset/config.json`.
+- This repo publishes libraries only (`packages/*`). Host applications live in other repositories.
