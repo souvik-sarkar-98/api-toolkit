@@ -13,8 +13,6 @@
     "build": "turbo run build",
     "type-check": "turbo run type-check",
     "clean": "turbo run clean && rimraf .turbo",
-    "clean:generated": "node scripts/clean-generated.mjs --keep-node-modules",
-    "clean:reset": "node scripts/clean-generated.mjs",
     "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
     "changeset": "changeset",
     "changeset:status": "changeset status",
