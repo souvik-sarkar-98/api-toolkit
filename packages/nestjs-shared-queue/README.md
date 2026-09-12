@@ -1,11 +1,11 @@
-# `@api-toolkit/nestjs-shared-queue`
+# `@ssapi-toolkit/nestjs-shared-queue`
 
 BullMQ job dispatch and worker handlers. Feature modules enqueue via `QueueFacade` and implement `@QueueHandler`.
 
 ## Install
 
 ```bash
-npm install @api-toolkit/nestjs-shared-core @api-toolkit/nestjs-shared-queue
+npm install @ssapi-toolkit/nestjs-shared-core @ssapi-toolkit/nestjs-shared-queue
 ```
 
 Requires Redis (BullMQ) and typically `AuthModule` for worker identity context.
@@ -43,7 +43,7 @@ await this.queueFacade.add(new CorrespondenceDispatchJob(/* … */));
 ## Build (this repo)
 
 ```bash
-npm run build -w @api-toolkit/nestjs-shared-queue
+npm run build -w @ssapi-toolkit/nestjs-shared-queue
 ```
 
 Overview: [root README](../../README.md).

@@ -1,4 +1,4 @@
-import { IRepository } from '@api-toolkit/nestjs-shared-core';
+import { IRepository } from '@ssapi-toolkit/nestjs-shared-core';
 import { JsonDocument } from '../aggregates/json-document.aggregate';
 
 export interface JsonDocumentFilter {

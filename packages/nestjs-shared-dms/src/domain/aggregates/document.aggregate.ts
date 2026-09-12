@@ -1,5 +1,5 @@
 import { randomUUID } from 'crypto';
-import { AggregateRoot, BusinessError } from '@api-toolkit/nestjs-shared-core';
+import { AggregateRoot, BusinessError } from '@ssapi-toolkit/nestjs-shared-core';
 import { FileMetadata } from '../value-objects/file-metadata.vo';
 import { DocumentMapping } from '../entities/document-mapping.entity';
 import { DocumentVisibility } from '../enums/document-visibility.enum';

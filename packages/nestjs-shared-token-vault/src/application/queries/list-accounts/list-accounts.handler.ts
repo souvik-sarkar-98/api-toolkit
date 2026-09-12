@@ -1,6 +1,6 @@
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 import { Inject, Injectable } from '@nestjs/common';
-import { Page } from '@api-toolkit/nestjs-shared-core';
+import { Page } from '@ssapi-toolkit/nestjs-shared-core';
 import { ListAccountsQuery } from './list-accounts.query';
 import { IOAuthAccountRepository } from '../../../domain/repositories/oauth-account.repository';
 import type { IOAuthAccountRepository as IAccountRepo } from '../../../domain/repositories/oauth-account.repository';

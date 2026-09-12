@@ -1,7 +1,7 @@
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { Inject, Injectable } from '@nestjs/common';
 import { createHash, randomBytes } from 'crypto';
-import { CacheService } from '@api-toolkit/nestjs-shared-persistence';
+import { CacheService } from '@ssapi-toolkit/nestjs-shared-persistence';
 import { InitiateOAuthCommand } from './initiate-oauth.command';
 import { OAUTH_PROVIDER_REGISTRY } from '../../ports/oauth-provider.port';
 import type { IOAuthProvider } from '../../ports/oauth-provider.port';

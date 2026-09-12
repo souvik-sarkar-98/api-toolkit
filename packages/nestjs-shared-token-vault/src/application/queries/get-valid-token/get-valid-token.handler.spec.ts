@@ -1,12 +1,12 @@
-import { GetValidTokenHandler } from '@api-toolkit/nestjs-shared-token-vault/application/queries/get-valid-token/get-valid-token.handler';
-import { GetValidTokenQuery } from '@api-toolkit/nestjs-shared-token-vault/application/queries/get-valid-token/get-valid-token.query';
+import { GetValidTokenHandler } from '@ssapi-toolkit/nestjs-shared-token-vault/application/queries/get-valid-token/get-valid-token.handler';
+import { GetValidTokenQuery } from '@ssapi-toolkit/nestjs-shared-token-vault/application/queries/get-valid-token/get-valid-token.query';
 import {
   AmbiguousTokenSelectionError,
   ProviderNotConfiguredError,
   TokenNotFoundError,
-} from '@api-toolkit/nestjs-shared-token-vault/domain/errors/token-vault.errors';
-import { EncryptedToken } from '@api-toolkit/nestjs-shared-token-vault/domain/value-objects/encrypted-token.vo';
-import { OAuthToken } from '@api-toolkit/nestjs-shared-token-vault/domain/aggregates/oauth-token/oauth-token.aggregate';
+} from '@ssapi-toolkit/nestjs-shared-token-vault/domain/errors/token-vault.errors';
+import { EncryptedToken } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/value-objects/encrypted-token.vo';
+import { OAuthToken } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/aggregates/oauth-token/oauth-token.aggregate';
 
 const SECRET = 'super-secret-key-that-is-at-least-32chars!!';
 const FUTURE = new Date(Date.now() + 3_600_000);

@@ -1,4 +1,4 @@
-import { decryptText, encryptText, isEncryptedText } from '@api-toolkit/nestjs-shared-core';
+import { decryptText, encryptText, isEncryptedText } from '@ssapi-toolkit/nestjs-shared-core';
 import { InvalidEncryptedTokenError } from '../errors/token-vault.errors';
 
 /**

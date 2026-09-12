@@ -1,6 +1,6 @@
 import { Inject, Injectable, Optional } from '@nestjs/common';
 import { CommandHandler, EventBus, ICommandHandler } from '@nestjs/cqrs';
-import { IEntityAccessPort } from '@api-toolkit/nestjs-shared-core';
+import { IEntityAccessPort } from '@ssapi-toolkit/nestjs-shared-core';
 import { Form } from '../../../domain/aggregates/form/form.aggregate';
 import { FormKeyAlreadyExistsError } from '../../../domain/errors/form.errors';
 import { FormKeyPolicy } from '../../../domain/policies/form-key.policy';

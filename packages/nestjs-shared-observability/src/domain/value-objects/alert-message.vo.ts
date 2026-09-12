@@ -1,4 +1,4 @@
-import { BusinessError } from '@api-toolkit/nestjs-shared-core';
+import { BusinessError } from '@ssapi-toolkit/nestjs-shared-core';
 import { AlertType } from '../enums/alert-type.enum';
 
 export interface AlertMessageProps {

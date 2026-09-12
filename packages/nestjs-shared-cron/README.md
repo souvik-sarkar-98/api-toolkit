@@ -1,11 +1,11 @@
-# `@api-toolkit/nestjs-shared-cron`
+# `@ssapi-toolkit/nestjs-shared-cron`
 
 Scheduled jobs (Quartz-style expressions) that enqueue work through a queue port. Persistence of job definitions is a host port (`CRON_JOB_STORE_PORT`).
 
 ## Install
 
 ```bash
-npm install @api-toolkit/nestjs-shared-core @api-toolkit/nestjs-shared-cron
+npm install @ssapi-toolkit/nestjs-shared-core @ssapi-toolkit/nestjs-shared-cron
 ```
 
 Typical host wiring: JSON-store or Prisma for `ICronJobStorePort`, and `{ provide: CRON_JOB_QUEUE_PORT, useClass: QueueCronJobAdapter }` after `QueueModule.forRootAsync()`.
@@ -31,7 +31,7 @@ The host must register `CRON_JOB_STORE_PORT` and `CRON_JOB_QUEUE_PORT` or startu
 ## Build (this repo)
 
 ```bash
-npm run build -w @api-toolkit/nestjs-shared-cron
+npm run build -w @ssapi-toolkit/nestjs-shared-cron
 ```
 
 Overview: [root README](../../README.md).

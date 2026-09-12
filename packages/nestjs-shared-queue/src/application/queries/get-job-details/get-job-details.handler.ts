@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
-import { BusinessError } from '@api-toolkit/nestjs-shared-core';
+import { BusinessError } from '@ssapi-toolkit/nestjs-shared-core';
 import { QueueProcessingService } from '../../../infrastructure/services/queue-processing.service';
 import { QueueJobResponseMapper } from '../../mappers/queue-job-response.mapper';
 import { JobDetail } from '../../../presentation/dto/queue.dto';

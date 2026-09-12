@@ -1,5 +1,5 @@
 import { Injectable, Inject, Optional } from '@nestjs/common';
-import { encryptText, decryptText } from '@api-toolkit/nestjs-shared-core';
+import { encryptText, decryptText } from '@ssapi-toolkit/nestjs-shared-core';
 import { CustomFieldType } from '../../domain/enums/custom-field-type.enum';
 import {
   EncryptionKeyMissingError,

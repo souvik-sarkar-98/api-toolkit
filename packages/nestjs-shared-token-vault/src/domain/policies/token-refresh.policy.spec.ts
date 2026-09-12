@@ -1,6 +1,6 @@
-import { OAuthToken } from '@api-toolkit/nestjs-shared-token-vault/domain/aggregates/oauth-token/oauth-token.aggregate';
-import { EncryptedToken } from '@api-toolkit/nestjs-shared-token-vault/domain/value-objects/encrypted-token.vo';
-import { TokenRefreshPolicy } from '@api-toolkit/nestjs-shared-token-vault/domain/policies/token-refresh.policy';
+import { OAuthToken } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/aggregates/oauth-token/oauth-token.aggregate';
+import { EncryptedToken } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/value-objects/encrypted-token.vo';
+import { TokenRefreshPolicy } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/policies/token-refresh.policy';
 
 const SECRET = 'super-secret-key-that-is-at-least-32chars!!';
 

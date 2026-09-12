@@ -3,8 +3,8 @@ jest.mock('@nestjs/axios', () => ({
   HttpService: class HttpService { },
 }));
 
-import { MicrosoftOAuthProvider } from '@api-toolkit/nestjs-shared-token-vault/infrastructure/providers/microsoft-oauth.provider';
-import { MICROSOFT_SCOPES } from '@api-toolkit/nestjs-shared-token-vault/scopes';
+import { MicrosoftOAuthProvider } from '@ssapi-toolkit/nestjs-shared-token-vault/infrastructure/providers/microsoft-oauth.provider';
+import { MICROSOFT_SCOPES } from '@ssapi-toolkit/nestjs-shared-token-vault/scopes';
 import { of, throwError } from 'rxjs';
 
 const ENCRYPTION_KEY = 'test-encryption-key-that-is-at-least-32chars';

@@ -1,9 +1,9 @@
-import { OAuthToken } from '@api-toolkit/nestjs-shared-token-vault/domain/aggregates/oauth-token/oauth-token.aggregate';
-import { EncryptedToken } from '@api-toolkit/nestjs-shared-token-vault/domain/value-objects/encrypted-token.vo';
-import { TokenScope } from '@api-toolkit/nestjs-shared-token-vault/domain/value-objects/token-scope.vo';
-import { TokenRefreshedEvent } from '@api-toolkit/nestjs-shared-token-vault/domain/events/token-refreshed.event';
-import { TokenRevokedEvent } from '@api-toolkit/nestjs-shared-token-vault/domain/events/token-revoked.event';
-import { NoRefreshTokenError } from '@api-toolkit/nestjs-shared-token-vault/domain/errors/token-vault.errors';
+import { OAuthToken } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/aggregates/oauth-token/oauth-token.aggregate';
+import { EncryptedToken } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/value-objects/encrypted-token.vo';
+import { TokenScope } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/value-objects/token-scope.vo';
+import { TokenRefreshedEvent } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/events/token-refreshed.event';
+import { TokenRevokedEvent } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/events/token-revoked.event';
+import { NoRefreshTokenError } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/errors/token-vault.errors';
 
 const SECRET = 'super-secret-key-that-is-at-least-32chars!!';
 

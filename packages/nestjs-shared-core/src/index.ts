@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// @api-toolkit/nestjs-shared-core — Public API barrel
+// @ssapi-toolkit/nestjs-shared-core — Public API barrel
 //
 // Layer order: Domain → Application → Infrastructure → Presentation
 // ─────────────────────────────────────────────────────────────────────────────

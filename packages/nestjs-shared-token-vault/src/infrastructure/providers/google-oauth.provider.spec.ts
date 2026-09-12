@@ -1,5 +1,5 @@
-import { GoogleOAuthProvider } from '@api-toolkit/nestjs-shared-token-vault/infrastructure/providers/google-oauth.provider';
-import { GOOGLE_SCOPES } from '@api-toolkit/nestjs-shared-token-vault/scopes';
+import { GoogleOAuthProvider } from '@ssapi-toolkit/nestjs-shared-token-vault/infrastructure/providers/google-oauth.provider';
+import { GOOGLE_SCOPES } from '@ssapi-toolkit/nestjs-shared-token-vault/scopes';
 
 const ENCRYPTION_KEY = 'test-encryption-key-that-is-at-least-32chars';
 

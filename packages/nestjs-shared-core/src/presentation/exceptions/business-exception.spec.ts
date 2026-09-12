@@ -1,5 +1,5 @@
 import { HttpStatus } from '@nestjs/common';
-import { BusinessException } from '@api-toolkit/nestjs-shared-core';
+import { BusinessException } from '@ssapi-toolkit/nestjs-shared-core';
 
 describe('BusinessException', () => {
   it('is an instance of Error', () => {

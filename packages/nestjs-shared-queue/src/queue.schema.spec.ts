@@ -1,4 +1,4 @@
-import { QueueOptionsSchema } from '@api-toolkit/nestjs-shared-queue/queue.schema';
+import { QueueOptionsSchema } from '@ssapi-toolkit/nestjs-shared-queue/queue.schema';
 
 describe('QueueOptionsSchema', () => {
   it('accepts a URL-based connection', () => {

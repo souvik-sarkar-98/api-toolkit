@@ -1,11 +1,11 @@
-# `@api-toolkit/nestjs-shared-token-vault`
+# `@ssapi-toolkit/nestjs-shared-token-vault`
 
 Encrypted OAuth account and token storage. Other modules obtain access tokens through `TokenVaultFacade` only.
 
 ## Install
 
 ```bash
-npm install @api-toolkit/nestjs-shared-core @api-toolkit/nestjs-shared-token-vault
+npm install @ssapi-toolkit/nestjs-shared-core @ssapi-toolkit/nestjs-shared-token-vault
 ```
 
 The host implements `IOAuthAccountRepository` / `IOAuthTokenRepository` and registers OAuth providers on `OAUTH_PROVIDER_REGISTRY`.
@@ -34,7 +34,7 @@ Wire `OAUTH_ACCESS_TOKEN_PORT` from core to this facade so DMS/Gmail adapters ca
 ## Build (this repo)
 
 ```bash
-npm run build -w @api-toolkit/nestjs-shared-token-vault
+npm run build -w @ssapi-toolkit/nestjs-shared-token-vault
 ```
 
 Overview: [root README](../../README.md).

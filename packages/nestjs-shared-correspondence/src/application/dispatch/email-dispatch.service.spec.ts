@@ -3,11 +3,11 @@
  * Covers: raw htmlTemplate path, structured htmlTemplateData -> layout path,
  * placeholder resolution, and the missing-template error.
  */
-import { EmailDispatchService } from '@api-toolkit/nestjs-shared-correspondence/application/dispatch/email-dispatch.service';
-import { ITemplatePort, EmailTemplateData } from '@api-toolkit/nestjs-shared-correspondence/domain/ports/template.port';
-import { ILayoutRendererPort } from '@api-toolkit/nestjs-shared-correspondence/domain/ports/layout-renderer.port';
-import { IEmailSenderPort, EmailMessage } from '@api-toolkit/nestjs-shared-correspondence/domain/ports/email-sender.port';
-import { TemplateNotFoundError } from '@api-toolkit/nestjs-shared-correspondence/domain/errors/correspondence.errors';
+import { EmailDispatchService } from '@ssapi-toolkit/nestjs-shared-correspondence/application/dispatch/email-dispatch.service';
+import { ITemplatePort, EmailTemplateData } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/ports/template.port';
+import { ILayoutRendererPort } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/ports/layout-renderer.port';
+import { IEmailSenderPort, EmailMessage } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/ports/email-sender.port';
+import { TemplateNotFoundError } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/errors/correspondence.errors';
 
 function buildService(template: EmailTemplateData | null) {
   const sent: EmailMessage[] = [];

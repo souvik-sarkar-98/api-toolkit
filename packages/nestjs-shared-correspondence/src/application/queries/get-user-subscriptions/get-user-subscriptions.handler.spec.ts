@@ -1,11 +1,11 @@
 /**
  * GetUserSubscriptionsHandler unit tests.
  */
-import { GetUserSubscriptionsHandler } from '@api-toolkit/nestjs-shared-correspondence/application/queries/get-user-subscriptions/get-user-subscriptions.handler';
-import { GetUserSubscriptionsQuery } from '@api-toolkit/nestjs-shared-correspondence/application/queries/get-user-subscriptions/get-user-subscriptions.query';
-import { IResourceSubscriptionRepository } from '@api-toolkit/nestjs-shared-correspondence/domain/repositories/resource-subscription.repository';
-import { ResourceSubscription } from '@api-toolkit/nestjs-shared-correspondence/domain/aggregates/resource-subscription.aggregate';
-import { SubscribedVia } from '@api-toolkit/nestjs-shared-correspondence/domain/enums/subscribed-via.enum';
+import { GetUserSubscriptionsHandler } from '@ssapi-toolkit/nestjs-shared-correspondence/application/queries/get-user-subscriptions/get-user-subscriptions.handler';
+import { GetUserSubscriptionsQuery } from '@ssapi-toolkit/nestjs-shared-correspondence/application/queries/get-user-subscriptions/get-user-subscriptions.query';
+import { IResourceSubscriptionRepository } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/repositories/resource-subscription.repository';
+import { ResourceSubscription } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/aggregates/resource-subscription.aggregate';
+import { SubscribedVia } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/subscribed-via.enum';
 
 function makeSub(userId: string) {
   return ResourceSubscription.createUserSubscription({

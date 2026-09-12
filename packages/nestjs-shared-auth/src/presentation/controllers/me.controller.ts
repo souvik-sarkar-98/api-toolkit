@@ -5,7 +5,7 @@ import {
   ApiSecurity,
   ApiTags,
 } from '@nestjs/swagger';
-import { ApiAutoResponse } from '@api-toolkit/nestjs-shared-core';
+import { ApiAutoResponse } from '@ssapi-toolkit/nestjs-shared-core';
 import { CurrentUser } from '../decorators/current-user.decorator';
 import { AuthUser } from '../../application/models/auth-user';
 import { CurrentUserResponseDto } from '../../application/dtos/response/auth-response.dtos';

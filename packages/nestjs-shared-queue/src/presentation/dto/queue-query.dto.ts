@@ -1,6 +1,6 @@
 import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
 import { IsEnum, IsIn, IsOptional, IsString } from "class-validator";
-import { PaginatedQueryDto } from "@api-toolkit/nestjs-shared-core";
+import { PaginatedQueryDto } from "@ssapi-toolkit/nestjs-shared-core";
 import { JobStatus } from "../../domain/enums/job-status.enum";
 
 const JOB_TYPES = [

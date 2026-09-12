@@ -2,15 +2,15 @@
  * SubscriptionResolutionService unit tests.
  * Covers: users mode, roles mode, resource mode, and override emails.
  */
-import { SubscriptionResolutionService } from '@api-toolkit/nestjs-shared-correspondence/application/dispatch/subscription-resolution.service';
-import { IResourceSubscriptionRepository } from '@api-toolkit/nestjs-shared-correspondence/domain/repositories/resource-subscription.repository';
-import { IUserLookupPort, UserInfo } from '@api-toolkit/nestjs-shared-core';
-import { IUserRolePort } from '@api-toolkit/nestjs-shared-auth';
-import { ResourceSubscription } from '@api-toolkit/nestjs-shared-correspondence/domain/aggregates/resource-subscription.aggregate';
-import { SubscriptionChannel } from '@api-toolkit/nestjs-shared-correspondence/domain/entities/subscription-channel.entity';
-import { ChannelType } from '@api-toolkit/nestjs-shared-correspondence/domain/enums/channel-type.enum';
-import { EmailRole } from '@api-toolkit/nestjs-shared-correspondence/domain/enums/email-role.enum';
-import { SubscribedVia } from '@api-toolkit/nestjs-shared-correspondence/domain/enums/subscribed-via.enum';
+import { SubscriptionResolutionService } from '@ssapi-toolkit/nestjs-shared-correspondence/application/dispatch/subscription-resolution.service';
+import { IResourceSubscriptionRepository } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/repositories/resource-subscription.repository';
+import { IUserLookupPort, UserInfo } from '@ssapi-toolkit/nestjs-shared-core';
+import { IUserRolePort } from '@ssapi-toolkit/nestjs-shared-auth';
+import { ResourceSubscription } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/aggregates/resource-subscription.aggregate';
+import { SubscriptionChannel } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/entities/subscription-channel.entity';
+import { ChannelType } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/channel-type.enum';
+import { EmailRole } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/email-role.enum';
+import { SubscribedVia } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/subscribed-via.enum';
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 

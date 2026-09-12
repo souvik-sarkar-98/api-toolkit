@@ -1,9 +1,9 @@
 /**
  * SubscriptionChannel entity — pure domain unit tests.
  */
-import { SubscriptionChannel } from '@api-toolkit/nestjs-shared-correspondence/domain/entities/subscription-channel.entity';
-import { ChannelType } from '@api-toolkit/nestjs-shared-correspondence/domain/enums/channel-type.enum';
-import { EmailRole } from '@api-toolkit/nestjs-shared-correspondence/domain/enums/email-role.enum';
+import { SubscriptionChannel } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/entities/subscription-channel.entity';
+import { ChannelType } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/channel-type.enum';
+import { EmailRole } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/email-role.enum';
 
 const make = (channel: ChannelType = ChannelType.EMAIL) =>
   SubscriptionChannel.create({

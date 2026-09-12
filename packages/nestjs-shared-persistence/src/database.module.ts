@@ -9,7 +9,7 @@ import {
 import {
   BaseDynamicModule,
   DynamicModuleAsyncOptions,
-} from "@api-toolkit/nestjs-shared-core";
+} from "@ssapi-toolkit/nestjs-shared-core";
 import { DatabaseOptionsSchema } from "./database.schema";
 import { CacheService } from "./cache/cache.service";
 import {

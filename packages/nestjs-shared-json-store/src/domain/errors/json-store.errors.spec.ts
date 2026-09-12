@@ -5,7 +5,7 @@ import {
   JsonDocumentAlreadyExistsError,
   JsonDocumentInvalidError,
 } from './json-store.errors';
-import { BusinessError } from '@api-toolkit/nestjs-shared-core';
+import { BusinessError } from '@ssapi-toolkit/nestjs-shared-core';
 
 describe('JsonDocumentNotFoundError', () => {
   it('is an instance of BusinessError', () => {

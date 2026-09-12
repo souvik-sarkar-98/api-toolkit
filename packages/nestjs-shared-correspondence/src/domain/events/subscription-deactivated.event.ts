@@ -1,4 +1,4 @@
-import { DomainEvent } from '@api-toolkit/nestjs-shared-core';
+import { DomainEvent } from '@ssapi-toolkit/nestjs-shared-core';
 import type { ResourceSubscription } from '../aggregates/resource-subscription.aggregate';
 
 export type SubscriptionDeactivatedSnapshot = Pick<ResourceSubscription, 'id' | 'userId' | 'roleName' | 'resourceType' | 'resourceId'>;

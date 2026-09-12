@@ -5,7 +5,7 @@ import {
   BaseModuleValidator,
   IEntityAccessPort,
   registerModuleValidator,
-} from '@api-toolkit/nestjs-shared-core';
+} from '@ssapi-toolkit/nestjs-shared-core';
 
 import { CommentModuleOptions } from './comment.schema';
 import { COMMENT_OPTIONS } from './infrastructure/comment-options.token';

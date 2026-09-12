@@ -10,8 +10,8 @@ import {
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiSecurity, ApiTags } from '@nestjs/swagger';
 import { CommandBus } from '@nestjs/cqrs';
-import { AuthUser, CurrentUser, RequirePermissions, UnifiedAuthGuard, requireUserId } from '@api-toolkit/nestjs-shared-auth';
-import { ApiAutoResponse, ApiUuidParam } from '@api-toolkit/nestjs-shared-core';
+import { AuthUser, CurrentUser, RequirePermissions, UnifiedAuthGuard, requireUserId } from '@ssapi-toolkit/nestjs-shared-auth';
+import { ApiAutoResponse, ApiUuidParam } from '@ssapi-toolkit/nestjs-shared-core';
 import { FieldOption } from '../../domain/value-objects/field-option/field-option.vo';
 import { FieldCondition } from '../../domain/value-objects/field-condition/field-condition.vo';
 import { DependentOptions } from '../../domain/value-objects/dependent-options/dependent-options.vo';

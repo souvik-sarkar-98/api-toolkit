@@ -1,5 +1,5 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { BasePrismaService } from '@api-toolkit/nestjs-shared-persistence';
+import { BasePrismaService } from '@ssapi-toolkit/nestjs-shared-persistence';
 import type {
   HealthIndicatorOutcome,
   IHealthIndicator,

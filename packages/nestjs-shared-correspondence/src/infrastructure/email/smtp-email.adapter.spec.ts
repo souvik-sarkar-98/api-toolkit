@@ -26,8 +26,8 @@ jest.mock('nodemailer', () => {
 
 import { Logger } from '@nestjs/common';
 import * as nodemailer from 'nodemailer';
-import { SmtpEmailAdapter } from '@api-toolkit/nestjs-shared-correspondence/infrastructure/email/smtp-email.adapter';
-import { EmailDeliveryFailedError } from '@api-toolkit/nestjs-shared-correspondence/domain/errors/correspondence.errors';
+import { SmtpEmailAdapter } from '@ssapi-toolkit/nestjs-shared-correspondence/infrastructure/email/smtp-email.adapter';
+import { EmailDeliveryFailedError } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/errors/correspondence.errors';
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 

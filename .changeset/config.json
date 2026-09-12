@@ -7,5 +7,5 @@
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@api-toolkit/api"]
+  "ignore": ["@ssapi-toolkit/api"]
 }

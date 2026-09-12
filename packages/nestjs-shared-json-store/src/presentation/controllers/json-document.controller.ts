@@ -13,13 +13,13 @@ import {
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
-import { UnifiedAuthGuard, RequirePermissions, PermissionsGuard } from '@api-toolkit/nestjs-shared-auth';
+import { UnifiedAuthGuard, RequirePermissions, PermissionsGuard } from '@ssapi-toolkit/nestjs-shared-auth';
 import {
   ApiAutoResponse,
   ApiAutoVoidResponse,
   ApiKeyParam,
   ApiUuidParam,
-} from '@api-toolkit/nestjs-shared-core';
+} from '@ssapi-toolkit/nestjs-shared-core';
 import { CreateJsonDocumentCommand } from '../../application/commands/create-json-document/create-json-document.command';
 import { UpdateJsonDocumentCommand } from '../../application/commands/update-json-document/update-json-document.command';
 import { UpsertJsonDocumentCommand } from '../../application/commands/upsert-json-document/upsert-json-document.command';

@@ -1,6 +1,6 @@
 # API Toolkit
 
-npm workspaces + [Turborepo](https://turbo.build/) of **shared NestJS libraries** for Nabarun APIs. This repository publishes `@api-toolkit/*` packages; applications live in separate repos (for example the backend monorepo) and consume these libraries from npm or a workspace link.
+npm workspaces + [Turborepo](https://turbo.build/) of **shared NestJS libraries** for Nabarun APIs. This repository publishes `@ssapi-toolkit/*` packages; applications live in separate repos (for example the backend monorepo) and consume these libraries from npm or a workspace link.
 
 ## Packages
 
@@ -42,11 +42,11 @@ npm install
 | `npm run release` | Type-check, build `packages/*`, and publish (npm dist-tag `latest`) |
 | `npm run release:beta` | Type-check, build `packages/*`, and publish with npm dist-tag `beta` |
 
-Target one package with `npm run <script> -w @api-toolkit/nestjs-shared-<name>`.
+Target one package with `npm run <script> -w @ssapi-toolkit/nestjs-shared-<name>`.
 
 ## Adding a shared package
 
-Create `packages/nestjs-shared-<name>/package.json` (name `@api-toolkit/nestjs-shared-<name>`), then depend on it from another workspace with `"*"` or from an app via npm. Turborepo runs dependency builds first via `dependsOn: ["^build"]`. After a public API or behavior change, run `npm run changeset`.
+Create `packages/nestjs-shared-<name>/package.json` (name `@ssapi-toolkit/nestjs-shared-<name>`), then depend on it from another workspace with `"*"` or from an app via npm. Turborepo runs dependency builds first via `dependsOn: ["^build"]`. After a public API or behavior change, run `npm run changeset`.
 
 ## Package versioning (Changesets)
 
@@ -82,7 +82,7 @@ Dependent packages that use workspace `"*"` ranges get a patch bump when an upst
 
 ### CI release pipeline
 
-GitHub Actions uses the **deploy-platform** reusable workflows (this workspace’s `deploy-main` repo, GitHub `nabarun-ngo/deploy-platform`). The publish workflow versions with Changesets and publishes `@api-toolkit/*` to the public npm registry. It does **not** create git tags or GitHub Releases. Version history lives in `package.json`, `CHANGELOG.md`, and npm.
+GitHub Actions uses the **deploy-platform** reusable workflows (this workspace’s `deploy-main` repo, GitHub `nabarun-ngo/deploy-platform`). The publish workflow versions with Changesets and publishes `@ssapi-toolkit/*` to the public npm registry. It does **not** create git tags or GitHub Releases. Version history lives in `package.json`, `CHANGELOG.md`, and npm.
 
 | Workflow | Trigger | Purpose |
 |----------|---------|---------|
@@ -92,13 +92,13 @@ GitHub Actions uses the **deploy-platform** reusable workflows (this workspace�
 
 | Branch | npm dist-tag | Install |
 |--------|----------------|---------|
-| `main` | `latest` | `npm install @api-toolkit/nestjs-shared-core` |
-| `stage` | `beta` | `npm install @api-toolkit/nestjs-shared-core@beta` |
+| `main` | `latest` | `npm install @ssapi-toolkit/nestjs-shared-core` |
+| `stage` | `beta` | `npm install @ssapi-toolkit/nestjs-shared-core@beta` |
 
 **Setup (one-time):**
 
-1. Add repository secret **`NPM_TOKEN`** with an npm automation token that can publish `@api-toolkit/*` packages.
-2. Ensure you are logged in to npmjs with publish rights for `@api-toolkit` (`npm login`). Root [`.npmrc`](.npmrc) points the scope at `registry.npmjs.org`.
+1. Add repository secret **`NPM_TOKEN`** with an npm automation token that can publish `@ssapi-toolkit/*` packages.
+2. Ensure you are logged in to npmjs with publish rights for `@ssapi-toolkit` (`npm login`). Root [`.npmrc`](.npmrc) points the scope at `registry.npmjs.org`.
 3. On the **`stage` branch only**, enter Changesets prerelease mode once and commit the result:
 
    ```bash
@@ -116,6 +116,6 @@ Local releases (`npm run release` / `npm run release:beta`) still work if you pr
 ### Publishing notes
 
 - Libraries under `packages/` publish as **public** packages to npmjs (`publishConfig.access: public` + `registry.npmjs.org`).
-- Anyone can install without a token: `npm install @api-toolkit/nestjs-shared-core` (stable) or `npm install @api-toolkit/nestjs-shared-core@beta`.
-- For CI publish, use an npm automation token (`NPM_TOKEN`) with write access to the `@api-toolkit` org.
+- Anyone can install without a token: `npm install @ssapi-toolkit/nestjs-shared-core` (stable) or `npm install @ssapi-toolkit/nestjs-shared-core@beta`.
+- For CI publish, use an npm automation token (`NPM_TOKEN`) with write access to the `@ssapi-toolkit` org.
 - Workflows call `nabarun-ngo/deploy-platform` (`reusable-ci-publish.yml`, `reusable-ci-changeset-check.yml`, `reusable-ci-pr-check.yml`). That is the GitHub identity of this workspace’s `deploy-main` repo; change the `uses:` owner/name if the ops repo is published under a different path.

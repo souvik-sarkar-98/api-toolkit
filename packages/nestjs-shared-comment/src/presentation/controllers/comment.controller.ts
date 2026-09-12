@@ -13,12 +13,12 @@ import {
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
-import { AuthUser, CurrentUser, RequirePermissions, UnifiedAuthGuard, requireUserId } from '@api-toolkit/nestjs-shared-auth';
+import { AuthUser, CurrentUser, RequirePermissions, UnifiedAuthGuard, requireUserId } from '@ssapi-toolkit/nestjs-shared-auth';
 import {
   ApiAutoResponse,
   ApiAutoVoidResponse,
   ApiUuidParam,
-} from '@api-toolkit/nestjs-shared-core';
+} from '@ssapi-toolkit/nestjs-shared-core';
 import { AddCommentCommand } from '../../application/commands/add-comment/add-comment.command';
 import { UpdateCommentCommand } from '../../application/commands/update-comment/update-comment.command';
 import { DeleteCommentCommand } from '../../application/commands/delete-comment/delete-comment.command';

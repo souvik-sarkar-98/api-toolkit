@@ -1,8 +1,8 @@
 import { Controller, Get, Query, UseGuards } from '@nestjs/common';
 import { QueryBus } from '@nestjs/cqrs';
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
-import { ApiAutoPagedResponse, BaseFilter, PagedResponse } from '@api-toolkit/nestjs-shared-core';
-import { UnifiedAuthGuard, PermissionsGuard, RequirePermissions } from '@api-toolkit/nestjs-shared-auth';
+import { ApiAutoPagedResponse, BaseFilter, PagedResponse } from '@ssapi-toolkit/nestjs-shared-core';
+import { UnifiedAuthGuard, PermissionsGuard, RequirePermissions } from '@ssapi-toolkit/nestjs-shared-auth';
 import { GetNotificationsAdminQuery } from '../../application/queries/get-notifications-admin/get-notifications-admin.query';
 import { GetAdminNotificationsRequestDto } from '../../application/dtos/notification.request.dto';
 import { NotificationResponseDto } from '../../application/dtos/notification-response.dto';

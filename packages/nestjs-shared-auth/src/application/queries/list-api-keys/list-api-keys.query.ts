@@ -1,4 +1,4 @@
-import { BaseFilter } from '@api-toolkit/nestjs-shared-core';
+import { BaseFilter } from '@ssapi-toolkit/nestjs-shared-core';
 import { ApiKeyFilter } from '../../../domain/aggregates/api-key/api-key.aggregate';
 
 export class ListApiKeysQuery {

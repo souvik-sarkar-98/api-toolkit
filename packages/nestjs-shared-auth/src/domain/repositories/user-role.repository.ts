@@ -1,4 +1,4 @@
-import { IRepository } from '@api-toolkit/nestjs-shared-core';
+import { IRepository } from '@ssapi-toolkit/nestjs-shared-core';
 import { UserRole, UserRoleFilter } from '../aggregates/user-role/user-role.aggregate';
 
 export const IUserRoleRepository = Symbol('IUserRoleRepository');

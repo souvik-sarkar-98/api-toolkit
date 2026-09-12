@@ -1,4 +1,4 @@
-import { createAuditExtension } from '@api-toolkit/nestjs-shared-persistence/prisma/extensions/prisma-audit.extension';
+import { createAuditExtension } from '@ssapi-toolkit/nestjs-shared-persistence/prisma/extensions/prisma-audit.extension';
 
 describe('createAuditExtension', () => {
   function buildExtension(

@@ -7,8 +7,8 @@ import {
   DynamicModuleAsyncOptions,
   IUserLookupPort,
   registerModuleValidator,
-} from '@api-toolkit/nestjs-shared-core';
-import { IUserRolePort } from '@api-toolkit/nestjs-shared-auth';
+} from '@ssapi-toolkit/nestjs-shared-core';
+import { IUserRolePort } from '@ssapi-toolkit/nestjs-shared-auth';
 import { CorrespondenceOptionsSchema, type CorrespondenceModuleOptions } from './correspondence.schema';
 import { CORRESPONDENCE_OPTIONS } from './correspondence-options.token';
 import { INotificationRepository } from './domain/repositories/notification.repository';

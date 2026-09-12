@@ -1,8 +1,8 @@
 import { Body, Controller, Post } from '@nestjs/common';
 import { CommandBus } from '@nestjs/cqrs';
 import { ApiOperation, ApiSecurity, ApiTags } from '@nestjs/swagger';
-import { ApiAutoResponse } from '@api-toolkit/nestjs-shared-core';
-import { RequirePermissions, UseApiKey } from '@api-toolkit/nestjs-shared-auth';
+import { ApiAutoResponse } from '@ssapi-toolkit/nestjs-shared-core';
+import { RequirePermissions, UseApiKey } from '@ssapi-toolkit/nestjs-shared-auth';
 import { SendEmailCommand } from '../../application/commands/send-email/send-email.command';
 import { SendEmailDto, SendEmailResultDto } from '../../application/dtos/send-email.request.dto';
 

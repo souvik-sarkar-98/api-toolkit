@@ -5,21 +5,21 @@
  */
 
 // ── Mock deep infrastructure ──────────────────────────────────────────────
-jest.mock('@api-toolkit/nestjs-shared-queue/infrastructure/services/queue-processing.service', () => ({
+jest.mock('@ssapi-toolkit/nestjs-shared-queue/infrastructure/services/queue-processing.service', () => ({
   QueueProcessingService: class QueueProcessingService { },
 }));
-jest.mock('@api-toolkit/nestjs-shared-queue/infrastructure/services/queue-processor-registry.service', () => ({
+jest.mock('@ssapi-toolkit/nestjs-shared-queue/infrastructure/services/queue-processor-registry.service', () => ({
   QueueProcessorRegistry: class QueueProcessorRegistry { },
 }));
-jest.mock('@api-toolkit/nestjs-shared-queue/application/services/queue.facade', () => ({
+jest.mock('@ssapi-toolkit/nestjs-shared-queue/application/services/queue.facade', () => ({
   QueueFacade: class QueueFacade { },
 }));
-jest.mock('@api-toolkit/nestjs-shared-queue/presentation/controllers/queue.controller', () => ({
+jest.mock('@ssapi-toolkit/nestjs-shared-queue/presentation/controllers/queue.controller', () => ({
   QueueController: class QueueController { },
 }));
 
 // ── Imports ──────────────────────────────────────────────────────────────────
-import { QueueModule } from '@api-toolkit/nestjs-shared-queue/queue.module';
+import { QueueModule } from '@ssapi-toolkit/nestjs-shared-queue/queue.module';
 
 const validConnection = { url: 'redis://localhost:6379' };
 

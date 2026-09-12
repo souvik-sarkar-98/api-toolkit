@@ -1,4 +1,4 @@
-import { BaseDomain } from '@api-toolkit/nestjs-shared-core';
+import { BaseDomain } from '@ssapi-toolkit/nestjs-shared-core';
 
 export type CommentMentionId = { commentId: string; mentionedUserId: string };
 

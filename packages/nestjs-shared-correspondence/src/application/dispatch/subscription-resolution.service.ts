@@ -1,7 +1,7 @@
 import { Inject, Injectable, Logger, Optional } from '@nestjs/common';
 import { IResourceSubscriptionRepository } from '../../domain/repositories/resource-subscription.repository';
-import { IUserLookupPort } from '@api-toolkit/nestjs-shared-core';
-import { IUserRolePort } from '@api-toolkit/nestjs-shared-auth';
+import { IUserLookupPort } from '@ssapi-toolkit/nestjs-shared-core';
+import { IUserRolePort } from '@ssapi-toolkit/nestjs-shared-auth';
 import {
   CorrespondenceRecipients,
   TargetUsersRecipients,

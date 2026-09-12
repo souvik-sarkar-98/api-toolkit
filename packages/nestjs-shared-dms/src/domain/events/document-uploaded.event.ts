@@ -1,4 +1,4 @@
-import { DomainEvent } from '@api-toolkit/nestjs-shared-core';
+import { DomainEvent } from '@ssapi-toolkit/nestjs-shared-core';
 import type { Document } from '../aggregates/document.aggregate';
 
 export type DocumentUploadedSnapshot = Pick<Document, 'id' | 'fileName' | 'remotePath' | 'publicToken' | 'uploadedById'>;

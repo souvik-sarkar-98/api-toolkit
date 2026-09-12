@@ -1,7 +1,7 @@
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { IsArray, IsBoolean, IsDateString, IsOptional, IsString, MaxLength, MinLength } from 'class-validator';
 import { Transform } from 'class-transformer';
-import { PaginatedQueryDto } from '@api-toolkit/nestjs-shared-core';
+import { PaginatedQueryDto } from '@ssapi-toolkit/nestjs-shared-core';
 
 export class GenerateApiKeyRequestDto {
   @ApiProperty({ example: 'My Service Key' })

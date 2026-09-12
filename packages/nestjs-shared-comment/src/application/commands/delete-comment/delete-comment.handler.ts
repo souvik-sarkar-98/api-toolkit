@@ -1,6 +1,6 @@
 import { Inject, Injectable, Optional } from '@nestjs/common';
 import { CommandHandler, EventBus, ICommandHandler } from '@nestjs/cqrs';
-import { IEntityAccessPort } from '@api-toolkit/nestjs-shared-core';
+import { IEntityAccessPort } from '@ssapi-toolkit/nestjs-shared-core';
 import { CommentModuleOptions } from '../../../comment.schema';
 import { COMMENT_OPTIONS } from '../../../infrastructure/comment-options.token';
 import {

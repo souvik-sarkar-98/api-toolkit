@@ -20,7 +20,7 @@ import {
   ApiIdpSubParam,
   ApiStringQuery,
   ApiUuidParam,
-} from '@api-toolkit/nestjs-shared-core';
+} from '@ssapi-toolkit/nestjs-shared-core';
 import { GrantUserRoleCommand } from '../../application/commands/grant-user-role/grant-user-role.command';
 import { RevokeUserRoleCommand } from '../../application/commands/revoke-user-role/revoke-user-role.command';
 import { GrantUserPermissionCommand } from '../../application/commands/grant-user-permission/grant-user-permission.command';

@@ -1,4 +1,4 @@
-import { DomainEvent } from '@api-toolkit/nestjs-shared-core';
+import { DomainEvent } from '@ssapi-toolkit/nestjs-shared-core';
 import type { FormFieldDefinition } from '../entities/form-field-definition/form-field-definition.entity';
 
 export type FormFieldDisabledSnapshot = {

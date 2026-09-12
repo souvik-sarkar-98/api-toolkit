@@ -1,7 +1,7 @@
 import { Readable } from 'stream';
 import { Inject, Injectable, Logger, Optional } from '@nestjs/common';
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
-import { IEntityAccessPort } from '@api-toolkit/nestjs-shared-core';
+import { IEntityAccessPort } from '@ssapi-toolkit/nestjs-shared-core';
 import { DocumentNotFoundError } from '../../../domain/errors/document.errors';
 import { IDocumentEntityAccessPort } from '../../../domain/ports/entity-access.port';
 import { IStorageProvider } from '../../../domain/ports/storage.port';

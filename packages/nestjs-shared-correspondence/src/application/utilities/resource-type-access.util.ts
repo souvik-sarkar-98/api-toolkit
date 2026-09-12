@@ -1,4 +1,4 @@
-import { EntityTypePolicy } from '@api-toolkit/nestjs-shared-core';
+import { EntityTypePolicy } from '@ssapi-toolkit/nestjs-shared-core';
 import type { ResourceTypeConfig } from '../../correspondence.schema';
 
 const MODULE_PREFIX = 'CORRESPONDENCE';

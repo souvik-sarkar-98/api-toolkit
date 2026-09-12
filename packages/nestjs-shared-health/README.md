@@ -1,14 +1,14 @@
-# `@api-toolkit/nestjs-shared-health`
+# `@ssapi-toolkit/nestjs-shared-health`
 
 HTTP liveness, readiness, and optional metrics probes. Orchestrators call these without credentials (`@Public()`).
 
 ## Install
 
 ```bash
-npm install @api-toolkit/nestjs-shared-core @api-toolkit/nestjs-shared-health
+npm install @ssapi-toolkit/nestjs-shared-core @ssapi-toolkit/nestjs-shared-health
 ```
 
-Optional: `@api-toolkit/nestjs-shared-persistence` (database indicator) and `@api-toolkit/nestjs-shared-auth` (already a package dependency for `@Public` / `@IgnoreCaptcha`).
+Optional: `@ssapi-toolkit/nestjs-shared-persistence` (database indicator) and `@ssapi-toolkit/nestjs-shared-auth` (already a package dependency for `@Public` / `@IgnoreCaptcha`).
 
 ## What it does
 
@@ -33,7 +33,7 @@ Add custom probes with `indicators` (injectable classes) or `checks` (inline def
 ## Build (this repo)
 
 ```bash
-npm run build -w @api-toolkit/nestjs-shared-health
+npm run build -w @ssapi-toolkit/nestjs-shared-health
 ```
 
 Overview: [root README](../../README.md).

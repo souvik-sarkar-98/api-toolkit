@@ -2,7 +2,7 @@ import {
   EntityTypePolicy,
   EntityRecordAccessPolicy,
   IEntityAccessPort,
-} from '@api-toolkit/nestjs-shared-core';
+} from '@ssapi-toolkit/nestjs-shared-core';
 import { CustomFormsModuleOptions } from '../../custom-forms.schema';
 
 const MODULE_PREFIX = 'CUSTOM_FORM';

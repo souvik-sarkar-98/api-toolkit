@@ -1,5 +1,5 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { validateApiKey as verifyKeyHash, ICACHE_PORT, ICachePort } from '@api-toolkit/nestjs-shared-core';
+import { validateApiKey as verifyKeyHash, ICACHE_PORT, ICachePort } from '@ssapi-toolkit/nestjs-shared-core';
 import { IApiKeyVerifierPort } from '../../application/ports/api-key-verifier.port';
 import { IApiKeyRepository } from '../../domain/repositories/api-key.repository';
 import { ApiKey } from '../../domain/aggregates/api-key/api-key.aggregate';

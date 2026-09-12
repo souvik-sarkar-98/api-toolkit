@@ -1,4 +1,4 @@
-import { BusinessError } from '@api-toolkit/nestjs-shared-core';
+import { BusinessError } from '@ssapi-toolkit/nestjs-shared-core';
 
 export class JsonDocumentNotFoundError extends BusinessError {
   constructor(id: string) {

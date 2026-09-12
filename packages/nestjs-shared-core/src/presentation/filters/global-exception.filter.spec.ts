@@ -4,8 +4,8 @@ import {
   HttpStatus,
   InternalServerErrorException,
 } from '@nestjs/common';
-import { GlobalExceptionFilter } from '@api-toolkit/nestjs-shared-core';
-import { BusinessException } from '@api-toolkit/nestjs-shared-core';
+import { GlobalExceptionFilter } from '@ssapi-toolkit/nestjs-shared-core';
+import { BusinessException } from '@ssapi-toolkit/nestjs-shared-core';
 import { ThrottlerException } from '@nestjs/throttler';
 
 function makeHost(): { host: ArgumentsHost; json: jest.Mock; status: jest.Mock } {

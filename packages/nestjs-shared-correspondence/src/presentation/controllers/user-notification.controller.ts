@@ -9,7 +9,7 @@ import {
   BaseFilter,
   ENVELOPE_EXAMPLES,
   PagedResponse,
-} from '@api-toolkit/nestjs-shared-core';
+} from '@ssapi-toolkit/nestjs-shared-core';
 import {
   UnifiedAuthGuard,
   PermissionsGuard,
@@ -17,7 +17,7 @@ import {
   CurrentUser,
   AuthUser,
   requireUserId,
-} from '@api-toolkit/nestjs-shared-auth';
+} from '@ssapi-toolkit/nestjs-shared-auth';
 import { GetUserNotificationsQuery } from '../../application/queries/get-user-notifications/get-user-notifications.query';
 import { GetUnreadCountQuery } from '../../application/queries/get-unread-count/get-unread-count.query';
 import { MarkUserNotificationReadCommand } from '../../application/commands/mark-user-notification-read/mark-user-notification-read.command';

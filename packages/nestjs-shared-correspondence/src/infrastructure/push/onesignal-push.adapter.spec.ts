@@ -31,8 +31,8 @@ jest.mock('@onesignal/node-onesignal', () => {
   };
 });
 
-import { OneSignalPushAdapter } from '@api-toolkit/nestjs-shared-correspondence/infrastructure/push/onesignal-push.adapter';
-import { PushNotificationPayload } from '@api-toolkit/nestjs-shared-correspondence/domain/ports/push-notification.port';
+import { OneSignalPushAdapter } from '@ssapi-toolkit/nestjs-shared-correspondence/infrastructure/push/onesignal-push.adapter';
+import { PushNotificationPayload } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/ports/push-notification.port';
 import * as OneSignal from '@onesignal/node-onesignal';
 
 // ── Helpers ────────────────────────────────────────────────────────────────

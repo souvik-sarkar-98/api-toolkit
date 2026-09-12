@@ -1,5 +1,5 @@
 {
-  "name": "@api-toolkit/nestjs-shared-core",
+  "name": "@ssapi-toolkit/nestjs-shared-core",
   "version": "1.0.0",
   "main": "dist/index.js",
   "files": [

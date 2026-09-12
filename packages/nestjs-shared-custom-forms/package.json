@@ -1,5 +1,5 @@
 {
-  "name": "@api-toolkit/nestjs-shared-custom-forms",
+  "name": "@ssapi-toolkit/nestjs-shared-custom-forms",
   "version": "1.0.0",
   "main": "dist/index.js",
   "files": [
@@ -19,9 +19,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@api-toolkit/nestjs-shared-core": "*",
-    "@api-toolkit/nestjs-shared-auth": "*",
-    "@api-toolkit/nestjs-shared-persistence": "*"
+    "@ssapi-toolkit/nestjs-shared-core": "*",
+    "@ssapi-toolkit/nestjs-shared-auth": "*",
+    "@ssapi-toolkit/nestjs-shared-persistence": "*"
   },
   "exports": {
     ".": {

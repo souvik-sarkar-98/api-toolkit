@@ -3,25 +3,25 @@
  * Inspects the returned DynamicModule without running NestJS DI.
  */
 
-jest.mock('@api-toolkit/nestjs-shared-cron/application/commands/trigger-cron-jobs/trigger-cron-jobs.handler', () => ({
+jest.mock('@ssapi-toolkit/nestjs-shared-cron/application/commands/trigger-cron-jobs/trigger-cron-jobs.handler', () => ({
   TriggerCronJobsHandler: class TriggerCronJobsHandler { },
 }));
-jest.mock('@api-toolkit/nestjs-shared-cron/application/commands/create-cron-job/create-cron-job.handler', () => ({
+jest.mock('@ssapi-toolkit/nestjs-shared-cron/application/commands/create-cron-job/create-cron-job.handler', () => ({
   CreateCronJobHandler: class CreateCronJobHandler { },
 }));
-jest.mock('@api-toolkit/nestjs-shared-cron/application/commands/update-cron-job/update-cron-job.handler', () => ({
+jest.mock('@ssapi-toolkit/nestjs-shared-cron/application/commands/update-cron-job/update-cron-job.handler', () => ({
   UpdateCronJobHandler: class UpdateCronJobHandler { },
 }));
-jest.mock('@api-toolkit/nestjs-shared-cron/application/commands/delete-cron-job/delete-cron-job.handler', () => ({
+jest.mock('@ssapi-toolkit/nestjs-shared-cron/application/commands/delete-cron-job/delete-cron-job.handler', () => ({
   DeleteCronJobHandler: class DeleteCronJobHandler { },
 }));
-jest.mock('@api-toolkit/nestjs-shared-cron/application/commands/run-cron-job/run-cron-job.handler', () => ({
+jest.mock('@ssapi-toolkit/nestjs-shared-cron/application/commands/run-cron-job/run-cron-job.handler', () => ({
   RunCronJobHandler: class RunCronJobHandler { },
 }));
-jest.mock('@api-toolkit/nestjs-shared-cron/application/queries/get-cron-jobs/get-cron-jobs.handler', () => ({
+jest.mock('@ssapi-toolkit/nestjs-shared-cron/application/queries/get-cron-jobs/get-cron-jobs.handler', () => ({
   GetCronJobsHandler: class GetCronJobsHandler { },
 }));
-jest.mock('@api-toolkit/nestjs-shared-cron/presentation/controllers/cron.controller', () => ({
+jest.mock('@ssapi-toolkit/nestjs-shared-cron/presentation/controllers/cron.controller', () => ({
   CronController: class CronController { },
 }));
 jest.mock('@nestjs/cqrs', () => ({
@@ -35,10 +35,10 @@ jest.mock('@nestjs/cqrs', () => ({
   IQueryHandler: class { },
 }));
 
-import { Cron2Module } from '@api-toolkit/nestjs-shared-cron/cron.module';
-import { CRON2_OPTIONS } from '@api-toolkit/nestjs-shared-cron/infrastructure/cron-options.token';
-import { CRON_JOB_STORE_PORT } from '@api-toolkit/nestjs-shared-cron/domain/ports/cron-job-store.port';
-import { CRON_JOB_QUEUE_PORT } from '@api-toolkit/nestjs-shared-cron/domain/ports/cron-job-queue.port';
+import { Cron2Module } from '@ssapi-toolkit/nestjs-shared-cron/cron.module';
+import { CRON2_OPTIONS } from '@ssapi-toolkit/nestjs-shared-cron/infrastructure/cron-options.token';
+import { CRON_JOB_STORE_PORT } from '@ssapi-toolkit/nestjs-shared-cron/domain/ports/cron-job-store.port';
+import { CRON_JOB_QUEUE_PORT } from '@ssapi-toolkit/nestjs-shared-cron/domain/ports/cron-job-queue.port';
 
 describe('Cron2Module', () => {
   describe('forRoot()', () => {

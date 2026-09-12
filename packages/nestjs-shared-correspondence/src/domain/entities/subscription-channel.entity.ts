@@ -1,4 +1,4 @@
-import { BaseDomain } from '@api-toolkit/nestjs-shared-core';
+import { BaseDomain } from '@ssapi-toolkit/nestjs-shared-core';
 import { ChannelType } from '../enums/channel-type.enum';
 import { EmailRole } from '../enums/email-role.enum';
 

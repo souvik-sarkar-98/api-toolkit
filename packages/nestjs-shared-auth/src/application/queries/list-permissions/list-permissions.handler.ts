@@ -3,7 +3,7 @@ import { Inject, Injectable } from '@nestjs/common';
 import { ListPermissionsQuery } from './list-permissions.query';
 import { IPermissionRepository } from '../../../domain/repositories/permission.repository';
 import { PermissionResponseMapper } from '../../mappers/permission-response.mapper';
-import { PagedResponse } from '@api-toolkit/nestjs-shared-core';
+import { PagedResponse } from '@ssapi-toolkit/nestjs-shared-core';
 import { PermissionResponseDto } from '../../dtos/response/auth-response.dtos';
 
 @QueryHandler(ListPermissionsQuery)

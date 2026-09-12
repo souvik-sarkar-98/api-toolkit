@@ -1,4 +1,4 @@
-import { IRepository } from '@api-toolkit/nestjs-shared-core';
+import { IRepository } from '@ssapi-toolkit/nestjs-shared-core';
 import { OAuthAccount, OAuthAccountFilter } from '../aggregates/oauth-account/oauth-account.aggregate';
 
 export const IOAuthAccountRepository = Symbol('IOAuthAccountRepository');

@@ -5,7 +5,7 @@ import {
   EntityAccessDeniedError,
   IEntityAccessPort,
   resolvePublicErrorMessage,
-} from '@api-toolkit/nestjs-shared-core';
+} from '@ssapi-toolkit/nestjs-shared-core';
 import { IDocumentEntityAccessPort } from '../../../domain/ports/entity-access.port';
 import { IDocumentRepository } from '../../../domain/repositories/document.repository';
 import { DMS2_OPTIONS } from '../../../infrastructure/dms-options.application-token';

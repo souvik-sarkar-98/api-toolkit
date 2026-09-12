@@ -1,14 +1,14 @@
-# `@api-toolkit/nestjs-shared-custom-forms`
+# `@ssapi-toolkit/nestjs-shared-custom-forms`
 
 Definition-driven forms and per-entity submissions. Field types align with the frontend forms libraries (`text`, `select`, `date_range`, …).
 
 ## Install
 
 ```bash
-npm install @api-toolkit/nestjs-shared-core @api-toolkit/nestjs-shared-custom-forms
+npm install @ssapi-toolkit/nestjs-shared-core @ssapi-toolkit/nestjs-shared-custom-forms
 ```
 
-Ruleset JSON (for UI/backend contract): `@api-toolkit/nestjs-shared-custom-forms/schemas/custom-forms.ruleset.json`.
+Ruleset JSON (for UI/backend contract): `@ssapi-toolkit/nestjs-shared-custom-forms/schemas/custom-forms.ruleset.json`.
 
 The host registers `IFormRepository` and `IFormSubmissionRepository`, and optionally `ICustomFormEntityAccessPort`.
 
@@ -39,7 +39,7 @@ Hidden/conditioned field values must not be stored as if they were submitted; va
 ## Build (this repo)
 
 ```bash
-npm run build -w @api-toolkit/nestjs-shared-custom-forms
+npm run build -w @ssapi-toolkit/nestjs-shared-custom-forms
 ```
 
 Overview: [root README](../../README.md).

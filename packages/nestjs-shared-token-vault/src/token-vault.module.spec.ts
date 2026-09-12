@@ -1,18 +1,18 @@
-jest.mock('@api-toolkit/nestjs-shared-token-vault/infrastructure/providers/google-oauth.provider', () => ({
+jest.mock('@ssapi-toolkit/nestjs-shared-token-vault/infrastructure/providers/google-oauth.provider', () => ({
   GoogleOAuthProvider: class GoogleOAuthProvider { },
 }));
-jest.mock('@api-toolkit/nestjs-shared-token-vault/infrastructure/providers/microsoft-oauth.provider', () => ({
+jest.mock('@ssapi-toolkit/nestjs-shared-token-vault/infrastructure/providers/microsoft-oauth.provider', () => ({
   MicrosoftOAuthProvider: class MicrosoftOAuthProvider { },
 }));
-jest.mock('@api-toolkit/nestjs-shared-token-vault/presentation/controllers/oauth.controller', () => ({
+jest.mock('@ssapi-toolkit/nestjs-shared-token-vault/presentation/controllers/oauth.controller', () => ({
   OAuthController: class OAuthController { },
 }));
 
-import { TokenVaultModule } from '@api-toolkit/nestjs-shared-token-vault/token-vault.module';
-import { OAUTH_PROVIDER_REGISTRY } from '@api-toolkit/nestjs-shared-token-vault/application/ports/oauth-provider.port';
-import { TOKEN_VAULT_OPTIONS } from '@api-toolkit/nestjs-shared-token-vault/token-vault-options';
-import { GoogleOAuthProvider } from '@api-toolkit/nestjs-shared-token-vault/infrastructure/providers/google-oauth.provider';
-import { MicrosoftOAuthProvider } from '@api-toolkit/nestjs-shared-token-vault/infrastructure/providers/microsoft-oauth.provider';
+import { TokenVaultModule } from '@ssapi-toolkit/nestjs-shared-token-vault/token-vault.module';
+import { OAUTH_PROVIDER_REGISTRY } from '@ssapi-toolkit/nestjs-shared-token-vault/application/ports/oauth-provider.port';
+import { TOKEN_VAULT_OPTIONS } from '@ssapi-toolkit/nestjs-shared-token-vault/token-vault-options';
+import { GoogleOAuthProvider } from '@ssapi-toolkit/nestjs-shared-token-vault/infrastructure/providers/google-oauth.provider';
+import { MicrosoftOAuthProvider } from '@ssapi-toolkit/nestjs-shared-token-vault/infrastructure/providers/microsoft-oauth.provider';
 
 const validOptions = {
   encryption: {

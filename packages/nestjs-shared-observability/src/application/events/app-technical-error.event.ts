@@ -1,1 +1,1 @@
-export { AppTechnicalError } from "@api-toolkit/nestjs-shared-core";
+export { AppTechnicalError } from "@ssapi-toolkit/nestjs-shared-core";

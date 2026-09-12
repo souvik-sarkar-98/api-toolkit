@@ -23,7 +23,7 @@ import {
 } from '@nestjs/swagger';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
 import type { Response } from 'express';
-import { AuthUser, CurrentUser, RequirePermissions, UnifiedAuthGuard, requireUserId } from '@api-toolkit/nestjs-shared-auth';
+import { AuthUser, CurrentUser, RequirePermissions, UnifiedAuthGuard, requireUserId } from '@ssapi-toolkit/nestjs-shared-auth';
 import {
   ApiAutoResponse,
   ApiAutoPrimitiveResponse,
@@ -31,7 +31,7 @@ import {
   ApiKeyParam,
   ApiUuidParam,
   ENVELOPE_EXAMPLES,
-} from '@api-toolkit/nestjs-shared-core';
+} from '@ssapi-toolkit/nestjs-shared-core';
 import { DocumentVisibility } from '../../domain/enums/document-visibility.enum';
 import { UploadDocumentCommand } from '../../application/commands/upload-document/upload-document.command';
 import { DeleteDocumentCommand } from '../../application/commands/delete-document/delete-document.command';

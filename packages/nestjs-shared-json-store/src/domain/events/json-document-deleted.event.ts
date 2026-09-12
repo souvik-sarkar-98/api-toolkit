@@ -1,4 +1,4 @@
-import { DomainEvent } from '@api-toolkit/nestjs-shared-core';
+import { DomainEvent } from '@ssapi-toolkit/nestjs-shared-core';
 import type { JsonDocument } from '../aggregates/json-document.aggregate';
 
 export type JsonDocumentDeletedSnapshot = Pick<JsonDocument, 'id' | 'key' | 'namespace'>;

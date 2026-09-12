@@ -1,5 +1,5 @@
 import { randomUUID } from 'crypto';
-import { AggregateRoot, RootEvent } from '@api-toolkit/nestjs-shared-core';
+import { AggregateRoot, RootEvent } from '@ssapi-toolkit/nestjs-shared-core';
 import { FormSubmissionStatus } from '../../enums/form-submission-status.enum';
 import { FormFieldValue } from '../../entities/form-field-value/form-field-value.entity';
 import { FormSubmissionAlreadySubmittedError } from '../../errors/form.errors';

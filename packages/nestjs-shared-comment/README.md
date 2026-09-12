@@ -1,11 +1,11 @@
-# `@api-toolkit/nestjs-shared-comment`
+# `@ssapi-toolkit/nestjs-shared-comment`
 
 Comments and @-mentions attached to host entity types. HTTP API plus mention notification port.
 
 ## Install
 
 ```bash
-npm install @api-toolkit/nestjs-shared-core @api-toolkit/nestjs-shared-comment
+npm install @ssapi-toolkit/nestjs-shared-core @ssapi-toolkit/nestjs-shared-comment
 ```
 
 The host registers `ICommentRepository` and should provide `ICommentEntityAccessPort` so comments are restricted by record-level access. Optional `COMMENT_NOTIFICATION_PORT` for mention / “comment added” outbound notices.
@@ -32,7 +32,7 @@ Integrate with correspondence by implementing `ICommentNotificationPort` in the 
 ## Build (this repo)
 
 ```bash
-npm run build -w @api-toolkit/nestjs-shared-comment
+npm run build -w @ssapi-toolkit/nestjs-shared-comment
 ```
 
 Overview: [root README](../../README.md).

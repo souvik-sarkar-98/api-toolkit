@@ -28,7 +28,7 @@ import { registerHandlebarsHelpers } from './infrastructure/handlebars/handlebar
  *
  * @example
  * // app.module.ts
- * import { CoreModule } from '@api-toolkit/nestjs-shared-core';
+ * import { CoreModule } from '@ssapi-toolkit/nestjs-shared-core';
  *
  * @Module({ imports: [CoreModule, ...] })
  * export class AppModule {}

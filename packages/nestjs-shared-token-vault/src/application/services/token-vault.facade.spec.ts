@@ -1,6 +1,6 @@
-import { TokenVaultFacade } from '@api-toolkit/nestjs-shared-token-vault/application/services/token-vault.facade';
-import { GetValidTokenQuery } from '@api-toolkit/nestjs-shared-token-vault/application/queries/get-valid-token/get-valid-token.query';
-import { InitiateOAuthCommand } from '@api-toolkit/nestjs-shared-token-vault/application/commands/initiate-oauth/initiate-oauth.command';
+import { TokenVaultFacade } from '@ssapi-toolkit/nestjs-shared-token-vault/application/services/token-vault.facade';
+import { GetValidTokenQuery } from '@ssapi-toolkit/nestjs-shared-token-vault/application/queries/get-valid-token/get-valid-token.query';
+import { InitiateOAuthCommand } from '@ssapi-toolkit/nestjs-shared-token-vault/application/commands/initiate-oauth/initiate-oauth.command';
 
 const makeQueryBus = (result?: any) => ({
   execute: jest.fn().mockResolvedValue(result ?? 'decrypted-access-token'),

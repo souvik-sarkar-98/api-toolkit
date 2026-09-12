@@ -1,9 +1,9 @@
 /**
  * UpdateSubscriberEmailHandler unit tests.
  */
-import { UpdateSubscriberEmailHandler } from '@api-toolkit/nestjs-shared-correspondence/application/commands/update-subscriber-email/update-subscriber-email.handler';
-import { UpdateSubscriberEmailCommand } from '@api-toolkit/nestjs-shared-correspondence/application/commands/update-subscriber-email/update-subscriber-email.command';
-import { IResourceSubscriptionRepository } from '@api-toolkit/nestjs-shared-correspondence/domain/repositories/resource-subscription.repository';
+import { UpdateSubscriberEmailHandler } from '@ssapi-toolkit/nestjs-shared-correspondence/application/commands/update-subscriber-email/update-subscriber-email.handler';
+import { UpdateSubscriberEmailCommand } from '@ssapi-toolkit/nestjs-shared-correspondence/application/commands/update-subscriber-email/update-subscriber-email.command';
+import { IResourceSubscriptionRepository } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/repositories/resource-subscription.repository';
 
 function buildHandler() {
   const repo: jest.Mocked<IResourceSubscriptionRepository> = {

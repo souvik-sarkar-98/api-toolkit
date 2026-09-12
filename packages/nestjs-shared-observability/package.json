@@ -1,5 +1,5 @@
 {
-  "name": "@api-toolkit/nestjs-shared-observability",
+  "name": "@ssapi-toolkit/nestjs-shared-observability",
   "version": "1.0.0",
   "main": "dist/index.js",
   "files": [
@@ -19,7 +19,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@api-toolkit/nestjs-shared-core": "*"
+    "@ssapi-toolkit/nestjs-shared-core": "*"
   },
   "exports": {
     ".": {

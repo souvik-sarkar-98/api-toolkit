@@ -7,8 +7,8 @@ import {
   BaseModuleValidator,
   DynamicModuleAsyncOptions,
   registerModuleValidator,
-} from '@api-toolkit/nestjs-shared-core';
-import { ILockingPort } from '@api-toolkit/nestjs-shared-persistence';
+} from '@ssapi-toolkit/nestjs-shared-core';
+import { ILockingPort } from '@ssapi-toolkit/nestjs-shared-persistence';
 import { TOKEN_VAULT_OPTIONS, TokenVaultModuleOptions } from './token-vault-options';
 import { TokenVaultOptionsSchema } from './token-vault.schema';
 import { IOAuthAccountRepository } from './domain/repositories/oauth-account.repository';

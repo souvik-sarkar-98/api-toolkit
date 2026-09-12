@@ -1,5 +1,5 @@
 import { ApiKey, ApiKeyFilter } from '../aggregates/api-key/api-key.aggregate';
-import { IRepository } from '@api-toolkit/nestjs-shared-core';
+import { IRepository } from '@ssapi-toolkit/nestjs-shared-core';
 
 export const IApiKeyRepository = Symbol('IApiKeyRepository');
 

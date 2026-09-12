@@ -3,7 +3,7 @@ import { Redis } from "ioredis";
 import { BullModule } from "@nestjs/bullmq";
 import { DynamicModule, Logger, Module } from "@nestjs/common";
 import { CqrsModule } from "@nestjs/cqrs";
-import { BaseDynamicModule, DynamicModuleAsyncOptions } from "@api-toolkit/nestjs-shared-core";
+import { BaseDynamicModule, DynamicModuleAsyncOptions } from "@ssapi-toolkit/nestjs-shared-core";
 import { QueueController } from "./presentation/controllers/queue.controller";
 import { QueueFacade } from "./application/services/queue.facade";
 import { QueueProcessingService } from "./infrastructure/services/queue-processing.service";

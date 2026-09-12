@@ -4,7 +4,7 @@ import { GetNotificationsAdminQuery } from './get-notifications-admin.query';
 import { INotificationRepository } from '../../../domain/repositories/notification.repository';
 import { NotificationMapper } from '../../mappers/notification.mapper';
 import { NotificationResponseDto } from '../../dtos/notification-response.dto';
-import { PagedResponse } from '@api-toolkit/nestjs-shared-core';
+import { PagedResponse } from '@ssapi-toolkit/nestjs-shared-core';
 
 @QueryHandler(GetNotificationsAdminQuery)
 export class GetNotificationsAdminHandler

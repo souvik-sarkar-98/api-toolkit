@@ -1,5 +1,5 @@
 import { Inject, Injectable, Logger } from '@nestjs/common';
-import { BaseFilter, Page } from '@api-toolkit/nestjs-shared-core';
+import { BaseFilter, Page } from '@ssapi-toolkit/nestjs-shared-core';
 import { QueueJob } from '../../domain/aggregates/queue-job.aggregate';
 import { JobStatus } from '../../domain/enums/job-status.enum';
 import { IQueueJobRepository, QueueJobFilter } from '../../domain/repositories/queue-job.repository';

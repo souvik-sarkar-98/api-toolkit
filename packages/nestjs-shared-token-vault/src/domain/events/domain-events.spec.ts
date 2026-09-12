@@ -1,10 +1,10 @@
-import { OAuthAccount } from '@api-toolkit/nestjs-shared-token-vault/domain/aggregates/oauth-account/oauth-account.aggregate';
-import { OAuthToken } from '@api-toolkit/nestjs-shared-token-vault/domain/aggregates/oauth-token/oauth-token.aggregate';
-import { EncryptedToken } from '@api-toolkit/nestjs-shared-token-vault/domain/value-objects/encrypted-token.vo';
-import { AccountConnectedEvent } from '@api-toolkit/nestjs-shared-token-vault/domain/events/account-connected.event';
-import { AccountDisconnectedEvent } from '@api-toolkit/nestjs-shared-token-vault/domain/events/account-disconnected.event';
-import { TokenRefreshedEvent } from '@api-toolkit/nestjs-shared-token-vault/domain/events/token-refreshed.event';
-import { TokenRevokedEvent } from '@api-toolkit/nestjs-shared-token-vault/domain/events/token-revoked.event';
+import { OAuthAccount } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/aggregates/oauth-account/oauth-account.aggregate';
+import { OAuthToken } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/aggregates/oauth-token/oauth-token.aggregate';
+import { EncryptedToken } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/value-objects/encrypted-token.vo';
+import { AccountConnectedEvent } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/events/account-connected.event';
+import { AccountDisconnectedEvent } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/events/account-disconnected.event';
+import { TokenRefreshedEvent } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/events/token-refreshed.event';
+import { TokenRevokedEvent } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/events/token-revoked.event';
 
 const SECRET = 'super-secret-key-that-is-at-least-32chars!!';
 

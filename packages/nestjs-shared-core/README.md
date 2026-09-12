@@ -1,11 +1,11 @@
-# `@api-toolkit/nestjs-shared-core`
+# `@ssapi-toolkit/nestjs-shared-core`
 
-Foundation for every other `@api-toolkit` NestJS package: domain primitives, HTTP envelopes, bootstrap helpers, and `CoreModule`.
+Foundation for every other `@ssapi-toolkit` NestJS package: domain primitives, HTTP envelopes, bootstrap helpers, and `CoreModule`.
 
 ## Install
 
 ```bash
-npm install @api-toolkit/nestjs-shared-core
+npm install @ssapi-toolkit/nestjs-shared-core
 ```
 
 The host app should already depend on NestJS 11 (`@nestjs/common`, `@nestjs/core`, `@nestjs/cqrs` when using events).
@@ -21,7 +21,7 @@ The host app should already depend on NestJS 11 (`@nestjs/common`, `@nestjs/core
 
 ```ts
 // app.module.ts
-import { CoreModule } from '@api-toolkit/nestjs-shared-core';
+import { CoreModule } from '@ssapi-toolkit/nestjs-shared-core';
 
 @Module({ imports: [CoreModule, /* CqrsModule, feature modules */] })
 export class AppModule {}
@@ -29,7 +29,7 @@ export class AppModule {}
 
 ```ts
 // main.ts
-import { bootstrapApp } from '@api-toolkit/nestjs-shared-core';
+import { bootstrapApp } from '@ssapi-toolkit/nestjs-shared-core';
 import { AppModule } from './app.module';
 
 const app = await bootstrapApp(AppModule, {
@@ -45,7 +45,7 @@ await app.listen(process.env.PORT ?? 3000);
 ## Build (this repo)
 
 ```bash
-npm run build -w @api-toolkit/nestjs-shared-core
+npm run build -w @ssapi-toolkit/nestjs-shared-core
 ```
 
 Overview: [root README](../../README.md).

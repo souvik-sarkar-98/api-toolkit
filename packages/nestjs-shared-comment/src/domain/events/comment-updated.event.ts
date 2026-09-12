@@ -1,4 +1,4 @@
-import { DomainEvent } from '@api-toolkit/nestjs-shared-core';
+import { DomainEvent } from '@ssapi-toolkit/nestjs-shared-core';
 import type { Comment } from '../aggregates/comment.aggregate';
 import { MentionInput } from '../repositories/mention-input';
 

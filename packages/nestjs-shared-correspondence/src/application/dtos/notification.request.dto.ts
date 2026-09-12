@@ -1,7 +1,7 @@
 import { ApiPropertyOptional } from '@nestjs/swagger';
 import { IsBoolean, IsEnum, IsOptional, IsString } from 'class-validator';
 import { Type } from 'class-transformer';
-import { PaginatedQueryDto } from '@api-toolkit/nestjs-shared-core';
+import { PaginatedQueryDto } from '@ssapi-toolkit/nestjs-shared-core';
 
 export class GetUserNotificationsRequestDto extends PaginatedQueryDto {
   @ApiPropertyOptional({ example: false })

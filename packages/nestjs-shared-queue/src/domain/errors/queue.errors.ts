@@ -1,4 +1,4 @@
-import { BusinessError } from '@api-toolkit/nestjs-shared-core';
+import { BusinessError } from '@ssapi-toolkit/nestjs-shared-core';
 
 export class QueueJobInvalidStateTransitionError extends BusinessError {
   constructor(jobId: string, from: string, to: string) {

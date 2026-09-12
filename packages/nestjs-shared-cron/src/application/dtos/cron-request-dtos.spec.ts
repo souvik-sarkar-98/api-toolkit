@@ -8,7 +8,7 @@ import { plainToInstance } from 'class-transformer';
 import {
   CreateCronJobRequestDto,
   UpdateCronJobRequestDto,
-} from '@api-toolkit/nestjs-shared-cron/application/dtos/cron-request.dtos';
+} from '@ssapi-toolkit/nestjs-shared-cron/application/dtos/cron-request.dtos';
 
 // ── Helper ────────────────────────────────────────────────────────────────────
 async function hasErrors(dto: object): Promise<boolean> {

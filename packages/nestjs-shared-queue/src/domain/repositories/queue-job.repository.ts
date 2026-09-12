@@ -1,4 +1,4 @@
-import { IRepository } from '@api-toolkit/nestjs-shared-core';
+import { IRepository } from '@ssapi-toolkit/nestjs-shared-core';
 import { QueueJob } from '../aggregates/queue-job.aggregate';
 import { JobStatus } from '../enums/job-status.enum';
 

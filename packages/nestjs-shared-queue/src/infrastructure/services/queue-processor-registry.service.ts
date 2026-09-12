@@ -9,7 +9,7 @@ import {
 import { ModulesContainer } from "@nestjs/core/injector/modules-container";
 import { EventBus } from "@nestjs/cqrs";
 import { Job as BullJob, Queue, UnrecoverableError, WaitingChildrenError, Worker } from "bullmq";
-import { AppTechnicalError } from "@api-toolkit/nestjs-shared-core";
+import { AppTechnicalError } from "@ssapi-toolkit/nestjs-shared-core";
 import {
   QUEUE_HANDLER_METADATA,
   QueueHandlerOptions,

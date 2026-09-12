@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { BaseFilter, Page } from '@api-toolkit/nestjs-shared-core';
-import { CacheService } from '@api-toolkit/nestjs-shared-persistence';
+import { BaseFilter, Page } from '@ssapi-toolkit/nestjs-shared-core';
+import { CacheService } from '@ssapi-toolkit/nestjs-shared-persistence';
 import { JsonDocument } from '../../domain/aggregates/json-document.aggregate';
 import {
   IJsonDocumentRepository,

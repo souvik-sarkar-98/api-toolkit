@@ -25,7 +25,7 @@ import {
   ApiKeyParam,
   BaseFilter,
   PagedResponse,
-} from '@api-toolkit/nestjs-shared-core';
+} from '@ssapi-toolkit/nestjs-shared-core';
 import { RoleFilter } from '../../domain/aggregates/role/role.aggregate';
 import { ListRolesQuery } from '../../application/queries/list-roles/list-roles.query';
 import { GetRoleQuery } from '../../application/queries/get-role/get-role.query';

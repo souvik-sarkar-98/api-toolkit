@@ -10,7 +10,7 @@ This monorepo uses [Changesets](https://github.com/changesets/changesets) for in
    npm run changeset
    ```
 
-   Select the affected `@api-toolkit/nestjs-shared-*` packages and choose patch / minor / major.
+   Select the affected `@ssapi-toolkit/nestjs-shared-*` packages and choose patch / minor / major.
 
 2. **Apply version bumps** — when ready to release (usually on merge to `main`):
 
@@ -33,10 +33,10 @@ This monorepo uses [Changesets](https://github.com/changesets/changesets) for in
 Packages publish as **public** to the npmjs registry (`registry.npmjs.org`). Anyone can install without a token:
 
 ```bash
-npm install @api-toolkit/nestjs-shared-core
+npm install @ssapi-toolkit/nestjs-shared-core
 ```
 
-Before the first publish, create/claim the `@api-toolkit` org on [npmjs.com](https://www.npmjs.com/) and log in:
+Before the first publish, create/claim the `@ssapi-toolkit` org on [npmjs.com](https://www.npmjs.com/) and log in:
 
 ```powershell
 npm login

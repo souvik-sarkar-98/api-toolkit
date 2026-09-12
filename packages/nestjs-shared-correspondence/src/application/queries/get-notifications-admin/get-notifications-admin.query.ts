@@ -1,4 +1,4 @@
-import { BaseFilter } from '@api-toolkit/nestjs-shared-core';
+import { BaseFilter } from '@ssapi-toolkit/nestjs-shared-core';
 import { NotificationFilter } from '../../../domain/aggregates/notification.aggregate';
 
 export class GetNotificationsAdminQuery {

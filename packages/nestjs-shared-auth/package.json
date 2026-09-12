@@ -1,5 +1,5 @@
 {
-  "name": "@api-toolkit/nestjs-shared-auth",
+  "name": "@ssapi-toolkit/nestjs-shared-auth",
   "version": "1.0.0",
   "main": "dist/index.js",
   "files": [
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@nest-lab/throttler-storage-redis": "^1.2.0",
-    "@api-toolkit/nestjs-shared-core": "*"
+    "@ssapi-toolkit/nestjs-shared-core": "*"
   },
   "exports": {
     ".": {

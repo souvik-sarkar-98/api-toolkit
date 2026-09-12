@@ -1,11 +1,11 @@
-# `@api-toolkit/nestjs-shared-persistence`
+# `@ssapi-toolkit/nestjs-shared-persistence`
 
 Prisma + Redis infrastructure: `DatabaseModule`, CRUD repository base, cache, locking port.
 
 ## Install
 
 ```bash
-npm install @api-toolkit/nestjs-shared-core @api-toolkit/nestjs-shared-persistence
+npm install @ssapi-toolkit/nestjs-shared-core @ssapi-toolkit/nestjs-shared-persistence
 ```
 
 The host owns the generated Prisma client, connection string, and Redis URL.
@@ -46,7 +46,7 @@ Provide `{ provide: ICACHE_PORT, useExisting: CacheService }` so auth and other 
 ## Build (this repo)
 
 ```bash
-npm run build -w @api-toolkit/nestjs-shared-persistence
+npm run build -w @ssapi-toolkit/nestjs-shared-persistence
 ```
 
 Overview: [root README](../../README.md).

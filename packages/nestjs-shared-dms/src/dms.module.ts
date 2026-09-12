@@ -17,7 +17,7 @@ import {
   IEntityAccessPort,
   OAUTH_ACCESS_TOKEN_PORT,
   registerModuleValidator,
-} from '@api-toolkit/nestjs-shared-core';
+} from '@ssapi-toolkit/nestjs-shared-core';
 import { DmsModuleOptions, Dms2OptionsSchema } from './dms.schema';
 import { IDocumentEntityAccessPort } from './domain/ports/entity-access.port';
 import { IStorageProvider } from './domain/ports/storage.port';

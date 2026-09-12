@@ -1,6 +1,6 @@
 import { Injectable, Logger } from "@nestjs/common";
 import { Redis } from "ioredis";
-import { Page } from "@api-toolkit/nestjs-shared-core";
+import { Page } from "@ssapi-toolkit/nestjs-shared-core";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 

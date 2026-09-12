@@ -1,11 +1,11 @@
-# `@api-toolkit/nestjs-shared-observability`
+# `@ssapi-toolkit/nestjs-shared-observability`
 
 Turns `AppTechnicalError` (and similar) into outbound alerts. The host injects `IAlertPort` (email, Teams, pager, …).
 
 ## Install
 
 ```bash
-npm install @api-toolkit/nestjs-shared-core @api-toolkit/nestjs-shared-observability
+npm install @ssapi-toolkit/nestjs-shared-core @ssapi-toolkit/nestjs-shared-observability
 ```
 
 ## What it does
@@ -32,7 +32,7 @@ Register `{ provide: IAlertPort, useClass: HostAlertAdapter }` in the host.
 ## Build (this repo)
 
 ```bash
-npm run build -w @api-toolkit/nestjs-shared-observability
+npm run build -w @ssapi-toolkit/nestjs-shared-observability
 ```
 
 Overview: [root README](../../README.md).

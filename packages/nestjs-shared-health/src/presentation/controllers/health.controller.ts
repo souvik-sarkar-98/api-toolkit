@@ -6,7 +6,7 @@ import {
   ApiServiceUnavailableResponse,
   ApiTags,
 } from '@nestjs/swagger';
-import { IgnoreCaptcha, Public } from '@api-toolkit/nestjs-shared-auth';
+import { IgnoreCaptcha, Public } from '@ssapi-toolkit/nestjs-shared-auth';
 import type { ReadinessResult } from '../../application/dtos/health.dto';
 import { GetLivenessQuery } from '../../application/queries/get-liveness/get-liveness.query';
 import { GetReadinessQuery } from '../../application/queries/get-readiness/get-readiness.query';

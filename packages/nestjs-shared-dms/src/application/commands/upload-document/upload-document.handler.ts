@@ -1,7 +1,7 @@
 import { randomUUID } from 'crypto';
 import { Inject, Injectable, Logger, Optional } from '@nestjs/common';
 import { CommandHandler, EventBus, ICommandHandler } from '@nestjs/cqrs';
-import { IEntityAccessPort } from '@api-toolkit/nestjs-shared-core';
+import { IEntityAccessPort } from '@ssapi-toolkit/nestjs-shared-core';
 import { Document } from '../../../domain/aggregates/document.aggregate';
 import { DocumentMapping } from '../../../domain/entities/document-mapping.entity';
 import { DocumentVisibility } from '../../../domain/enums/document-visibility.enum';

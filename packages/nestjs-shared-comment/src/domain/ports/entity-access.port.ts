@@ -2,7 +2,7 @@ export const ICommentEntityAccessPort = Symbol('ICommentEntityAccessPort');
 
 /**
  * Optional port for record-level (entity-instance) access checks.
- * Consumers implement `IEntityAccessPort` from `@api-toolkit/nestjs-shared-core`
+ * Consumers implement `IEntityAccessPort` from `@ssapi-toolkit/nestjs-shared-core`
  * when a permission check alone is not sufficient — e.g. checking that the user
  * is a member of the specific donation/task.
  *
@@ -11,8 +11,8 @@ export const ICommentEntityAccessPort = Symbol('ICommentEntityAccessPort');
  * tier still applies via EntityTypePolicy).
  *
  * @example
- * import { IEntityAccessPort } from '@api-toolkit/nestjs-shared-core';
- * import { ICommentEntityAccessPort } from '@api-toolkit/nestjs-shared-comment';
+ * import { IEntityAccessPort } from '@ssapi-toolkit/nestjs-shared-core';
+ * import { ICommentEntityAccessPort } from '@ssapi-toolkit/nestjs-shared-comment';
  *
  * @Injectable()
  * export class CommentEntityAccessAdapter implements IEntityAccessPort {

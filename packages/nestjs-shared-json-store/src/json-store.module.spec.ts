@@ -3,7 +3,7 @@ import 'reflect-metadata';
 // Break the auth → @nestjs/axios → axios import chain that occurs when the
 // controller is loaded. The module spec only inspects the static DynamicModule
 // object, so these dependencies are never actually exercised.
-jest.mock('@api-toolkit/nestjs-shared-auth', () => ({
+jest.mock('@ssapi-toolkit/nestjs-shared-auth', () => ({
   UnifiedAuthGuard: class MockUnifiedAuthGuard { },
   RequirePermissions: () => () => { },
   PermissionsGuard: class MockPermissionsGuard { },

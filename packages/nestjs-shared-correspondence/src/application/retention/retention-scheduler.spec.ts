@@ -11,18 +11,18 @@
  *  - Swallows scheduling errors (logs, does not throw)
  */
 
-// Mock axios and @nestjs/axios to avoid missing peer dependency via @api-toolkit/nestjs-shared-queue transitive imports
+// Mock axios and @nestjs/axios to avoid missing peer dependency via @ssapi-toolkit/nestjs-shared-queue transitive imports
 jest.mock('axios', () => ({}), { virtual: true });
 jest.mock('@nestjs/axios', () => ({ HttpModule: class { }, HttpService: class { } }), {
   virtual: true,
 });
 
 import { Logger } from '@nestjs/common';
-import { QueueFacade } from '@api-toolkit/nestjs-shared-queue';
-import { RetentionSchedulerService } from '@api-toolkit/nestjs-shared-correspondence/application/retention/retention-scheduler.service';
-import { PurgeNotificationsJob, PurgeSubscriptionsJob } from '@api-toolkit/nestjs-shared-correspondence/application/jobs/retention.jobs';
-import { INotificationRepository } from '@api-toolkit/nestjs-shared-correspondence/domain/repositories/notification.repository';
-import { IResourceSubscriptionRepository } from '@api-toolkit/nestjs-shared-correspondence/domain/repositories/resource-subscription.repository';
+import { QueueFacade } from '@ssapi-toolkit/nestjs-shared-queue';
+import { RetentionSchedulerService } from '@ssapi-toolkit/nestjs-shared-correspondence/application/retention/retention-scheduler.service';
+import { PurgeNotificationsJob, PurgeSubscriptionsJob } from '@ssapi-toolkit/nestjs-shared-correspondence/application/jobs/retention.jobs';
+import { INotificationRepository } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/repositories/notification.repository';
+import { IResourceSubscriptionRepository } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/repositories/resource-subscription.repository';
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 

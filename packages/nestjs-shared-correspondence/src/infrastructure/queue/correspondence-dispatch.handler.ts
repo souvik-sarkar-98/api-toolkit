@@ -1,5 +1,5 @@
 import { Inject, Logger } from '@nestjs/common';
-import { QueueHandler, IQueueHandler, Job, JobExecutionContext } from '@api-toolkit/nestjs-shared-queue';
+import { QueueHandler, IQueueHandler, Job, JobExecutionContext } from '@ssapi-toolkit/nestjs-shared-queue';
 import { CorrespondenceDispatchJob } from '../../application/jobs/correspondence-dispatch.job';
 import { EmailDispatchService } from '../../application/dispatch/email-dispatch.service';
 import { IPushNotificationPort } from '../../domain/ports/push-notification.port';

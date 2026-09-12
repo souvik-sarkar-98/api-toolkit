@@ -1,4 +1,4 @@
-import { Page } from '@api-toolkit/nestjs-shared-core';
+import { Page } from '@ssapi-toolkit/nestjs-shared-core';
 
 describe('Page', () => {
   it('stores content, totalSize, pageIndex, pageSize', () => {

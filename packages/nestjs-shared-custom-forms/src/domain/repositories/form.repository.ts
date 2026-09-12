@@ -1,4 +1,4 @@
-import { IRepository } from '@api-toolkit/nestjs-shared-core';
+import { IRepository } from '@ssapi-toolkit/nestjs-shared-core';
 import { Form } from '../aggregates/form/form.aggregate';
 import { FormStatus } from '../enums/form-status.enum';
 

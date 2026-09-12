@@ -25,7 +25,7 @@ import {
   BaseFilter,
   PagedResponse,
   PaginatedQueryDto,
-} from '@api-toolkit/nestjs-shared-core';
+} from '@ssapi-toolkit/nestjs-shared-core';
 import { PermissionFilter } from '../../domain/aggregates/permission/permission.aggregate';
 import { ListPermissionsQuery } from '../../application/queries/list-permissions/list-permissions.query';
 import { GetPermissionQuery } from '../../application/queries/get-permission/get-permission.query';
