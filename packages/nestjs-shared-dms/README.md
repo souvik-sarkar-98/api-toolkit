@@ -1,11 +1,11 @@
-# `@ssapi-toolkit/nestjs-shared-dms`
+# `@ssdev-toolkit/nestjs-shared-dms`
 
 Document metadata plus blob storage. Default storage is Firebase; the host may pass `IStorageProvider` (for example Google Drive).
 
 ## Install
 
 ```bash
-npm install @ssapi-toolkit/nestjs-shared-core @ssapi-toolkit/nestjs-shared-dms
+npm install @ssdev-toolkit/nestjs-shared-core @ssdev-toolkit/nestjs-shared-dms
 ```
 
 The host registers `IDocumentRepository` and `IDocumentEntityAccessPort`. For Google Drive (or any non-Firebase provider), pass `storageProvider` into `DmsModule.forRoot` / `forRootAsync`.
@@ -35,7 +35,7 @@ OAuth-backed storage should obtain tokens through `OAUTH_ACCESS_TOKEN_PORT` (tok
 ## Build (this repo)
 
 ```bash
-npm run build -w @ssapi-toolkit/nestjs-shared-dms
+npm run build -w @ssdev-toolkit/nestjs-shared-dms
 ```
 
 Overview: [root README](../../README.md).

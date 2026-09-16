@@ -2,7 +2,7 @@ export const ICustomFormEntityAccessPort = Symbol('ICustomFormEntityAccessPort')
 
 /**
  * Optional port for record-level (entity-instance) access checks.
- * Consumers implement `IEntityAccessPort` from `@ssapi-toolkit/nestjs-shared-core`
+ * Consumers implement `IEntityAccessPort` from `@ssdev-toolkit/nestjs-shared-core`
  * when a permission check alone is not sufficient — e.g. checking that the user
  * is a member of the specific donation/task.
  *
@@ -11,8 +11,8 @@ export const ICustomFormEntityAccessPort = Symbol('ICustomFormEntityAccessPort')
  * tier still applies via EntityTypePolicy).
  *
  * @example
- * import { IEntityAccessPort } from '@ssapi-toolkit/nestjs-shared-core';
- * import { ICustomFormEntityAccessPort } from '@ssapi-toolkit/nestjs-shared-custom-forms';
+ * import { IEntityAccessPort } from '@ssdev-toolkit/nestjs-shared-core';
+ * import { ICustomFormEntityAccessPort } from '@ssdev-toolkit/nestjs-shared-custom-forms';
  *
  * @Injectable()
  * export class CustomFormEntityAccessAdapter implements IEntityAccessPort {

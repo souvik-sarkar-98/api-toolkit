@@ -2,7 +2,7 @@ export const IDocumentEntityAccessPort = Symbol('IDocumentEntityAccessPort');
 
 /**
  * Optional port for record-level (entity-instance) access checks.
- * Consumers implement `IEntityAccessPort` from `@ssapi-toolkit/nestjs-shared-core`
+ * Consumers implement `IEntityAccessPort` from `@ssdev-toolkit/nestjs-shared-core`
  * when a permission check alone is not sufficient — e.g. checking that the user
  * is a member of the specific entity.
  *
@@ -11,8 +11,8 @@ export const IDocumentEntityAccessPort = Symbol('IDocumentEntityAccessPort');
  * tier still applies via EntityTypePolicy).
  *
  * @example
- * import { IEntityAccessPort } from '@ssapi-toolkit/nestjs-shared-core';
- * import { IDocumentEntityAccessPort } from '@ssapi-toolkit/nestjs-shared-dms';
+ * import { IEntityAccessPort } from '@ssdev-toolkit/nestjs-shared-core';
+ * import { IDocumentEntityAccessPort } from '@ssdev-toolkit/nestjs-shared-dms';
  *
  * @Injectable()
  * export class DocumentEntityAccessAdapter implements IEntityAccessPort {

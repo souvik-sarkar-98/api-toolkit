@@ -1,4 +1,4 @@
-import type { BasePrismaService } from '@ssapi-toolkit/nestjs-shared-persistence';
+import type { BasePrismaService } from '@ssdev-toolkit/nestjs-shared-persistence';
 import { HealthOptionsSchema } from '../../health.schema';
 import { DatabaseHealthIndicator } from './database-health.indicator';
 

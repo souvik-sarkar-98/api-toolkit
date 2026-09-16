@@ -1,4 +1,4 @@
-import { BaseFilter } from '@ssapi-toolkit/nestjs-shared-core';
+import { BaseFilter } from '@ssdev-toolkit/nestjs-shared-core';
 import { RoleFilter } from '../../../domain/aggregates/role/role.aggregate';
 
 export class ListRolesQuery {

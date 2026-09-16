@@ -2,7 +2,7 @@ import { Logger } from "@nestjs/common";
 import {
   getTraceId,
   getUserContext,
-} from "@ssapi-toolkit/nestjs-shared-core";
+} from "@ssdev-toolkit/nestjs-shared-core";
 
 const logger = new Logger("PrismaAudit");
 

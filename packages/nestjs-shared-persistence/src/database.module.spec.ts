@@ -1,6 +1,6 @@
 import { DynamicModule } from '@nestjs/common';
-import { DatabaseModule, DATABASE_OPTIONS } from '@ssapi-toolkit/nestjs-shared-persistence/database.module';
-import { PRISMA_CLIENT } from '@ssapi-toolkit/nestjs-shared-persistence/prisma/base-prisma.service';
+import { DatabaseModule, DATABASE_OPTIONS } from '@ssdev-toolkit/nestjs-shared-persistence/database.module';
+import { PRISMA_CLIENT } from '@ssdev-toolkit/nestjs-shared-persistence/prisma/base-prisma.service';
 
 const validOptions = {
   redisUrl: 'redis://localhost:6379',

@@ -1,5 +1,5 @@
 import { randomUUID } from 'crypto';
-import { AggregateRoot } from '@ssapi-toolkit/nestjs-shared-core';
+import { AggregateRoot } from '@ssdev-toolkit/nestjs-shared-core';
 import { JsonDocumentInvalidError } from '../errors/json-store.errors';
 import { JsonDocumentCreatedEvent, type JsonDocumentCreatedSnapshot } from '../events/json-document-created.event';
 import { JsonDocumentUpdatedEvent, type JsonDocumentUpdatedSnapshot } from '../events/json-document-updated.event';

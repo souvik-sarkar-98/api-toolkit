@@ -1,4 +1,4 @@
-import { RootEvent } from '@ssapi-toolkit/nestjs-shared-core';
+import { RootEvent } from '@ssdev-toolkit/nestjs-shared-core';
 
 /**
  * Emitted by FormSubmission.submit() when a draft submission is finalised.

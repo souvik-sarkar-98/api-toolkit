@@ -1,6 +1,6 @@
 import { Inject, Injectable, Optional } from '@nestjs/common';
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
-import { IEntityAccessPort } from '@ssapi-toolkit/nestjs-shared-core';
+import { IEntityAccessPort } from '@ssdev-toolkit/nestjs-shared-core';
 import {
   FormDisabledError,
   FormNotFoundError,

@@ -1,5 +1,5 @@
 import { Inject, Injectable, Optional } from '@nestjs/common';
-import { CacheService, KEYV_REDIS_CLIENT } from '@ssapi-toolkit/nestjs-shared-persistence';
+import { CacheService, KEYV_REDIS_CLIENT } from '@ssdev-toolkit/nestjs-shared-persistence';
 import type {
   HealthIndicatorOutcome,
   IHealthIndicator,

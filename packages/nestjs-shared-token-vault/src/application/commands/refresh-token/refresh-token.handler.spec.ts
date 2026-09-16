@@ -1,15 +1,15 @@
-import { RefreshTokenHandler } from '@ssapi-toolkit/nestjs-shared-token-vault/application/commands/refresh-token/refresh-token.handler';
-import { RefreshTokenCommand } from '@ssapi-toolkit/nestjs-shared-token-vault/application/commands/refresh-token/refresh-token.command';
+import { RefreshTokenHandler } from '@ssdev-toolkit/nestjs-shared-token-vault/application/commands/refresh-token/refresh-token.handler';
+import { RefreshTokenCommand } from '@ssdev-toolkit/nestjs-shared-token-vault/application/commands/refresh-token/refresh-token.command';
 import {
   NoRefreshTokenError,
   ProviderNotConfiguredError,
   TokenExpiredError,
   TokenNotFoundError,
-} from '@ssapi-toolkit/nestjs-shared-token-vault/domain/errors/token-vault.errors';
-import { EncryptedToken } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/value-objects/encrypted-token.vo';
-import { OAuthToken } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/aggregates/oauth-token/oauth-token.aggregate';
+} from '@ssdev-toolkit/nestjs-shared-token-vault/domain/errors/token-vault.errors';
+import { EncryptedToken } from '@ssdev-toolkit/nestjs-shared-token-vault/domain/value-objects/encrypted-token.vo';
+import { OAuthToken } from '@ssdev-toolkit/nestjs-shared-token-vault/domain/aggregates/oauth-token/oauth-token.aggregate';
 import { EventBus, IEvent } from '@nestjs/cqrs';
-import { ILockingPort } from '@ssapi-toolkit/nestjs-shared-persistence';
+import { ILockingPort } from '@ssdev-toolkit/nestjs-shared-persistence';
 
 const SECRET = 'super-secret-key-that-is-at-least-32chars!!';
 const FUTURE = new Date(Date.now() + 3_600_000);

@@ -1,4 +1,4 @@
-import { BusinessError } from '@ssapi-toolkit/nestjs-shared-core';
+import { BusinessError } from '@ssdev-toolkit/nestjs-shared-core';
 
 /**
  * Immutable value object representing an OAuth scope set.

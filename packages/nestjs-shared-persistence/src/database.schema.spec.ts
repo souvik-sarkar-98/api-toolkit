@@ -1,4 +1,4 @@
-import { DatabaseOptionsSchema } from '@ssapi-toolkit/nestjs-shared-persistence/database.schema';
+import { DatabaseOptionsSchema } from '@ssdev-toolkit/nestjs-shared-persistence/database.schema';
 
 describe('DatabaseOptionsSchema', () => {
   const validOptions = {

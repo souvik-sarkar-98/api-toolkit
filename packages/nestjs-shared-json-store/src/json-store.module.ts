@@ -1,7 +1,7 @@
 import { DynamicModule, Injectable, Module } from '@nestjs/common';
 import { ModuleRef } from '@nestjs/core';
 import { CqrsModule } from '@nestjs/cqrs';
-import { BaseModuleValidator, registerModuleValidator } from '@ssapi-toolkit/nestjs-shared-core';
+import { BaseModuleValidator, registerModuleValidator } from '@ssdev-toolkit/nestjs-shared-core';
 import { JsonStoreModuleOptions } from './json-store.schema';
 
 import { CreateJsonDocumentHandler } from './application/commands/create-json-document/create-json-document.handler';

@@ -1,4 +1,4 @@
-import { DomainEvent } from '@ssapi-toolkit/nestjs-shared-core';
+import { DomainEvent } from '@ssdev-toolkit/nestjs-shared-core';
 import type { UserRole } from '../aggregates/user-role/user-role.aggregate';
 
 export type UserRoleRevokedSnapshot = Pick<UserRole, 'id' | 'idpSub' | 'roleId' | 'ownerId'>;

@@ -1,4 +1,4 @@
-import { IRepository } from '@ssapi-toolkit/nestjs-shared-core';
+import { IRepository } from '@ssdev-toolkit/nestjs-shared-core';
 import { UserRoleGroup, UserRoleGroupFilter } from '../aggregates/user-role-group/user-role-group.aggregate';
 import { UserRole } from '../aggregates/user-role/user-role.aggregate';
 

@@ -1,4 +1,4 @@
-import { ObservabilityModule, OBSERVABILITY_OPTIONS } from '@ssapi-toolkit/nestjs-shared-observability';
+import { ObservabilityModule, OBSERVABILITY_OPTIONS } from '@ssdev-toolkit/nestjs-shared-observability';
 
 describe('ObservabilityModule', () => {
   describe('forRoot()', () => {

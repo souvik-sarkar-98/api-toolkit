@@ -1,4 +1,4 @@
-import { UserInfo } from '@ssapi-toolkit/nestjs-shared-core';
+import { UserInfo } from '@ssdev-toolkit/nestjs-shared-core';
 
 export interface RbacContext {
   permissions: string[];

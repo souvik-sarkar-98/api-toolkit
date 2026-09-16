@@ -1,4 +1,4 @@
-import { BusinessError } from '@ssapi-toolkit/nestjs-shared-core';
+import { BusinessError } from '@ssdev-toolkit/nestjs-shared-core';
 
 export class ApiKeyNotFoundError extends BusinessError {
   constructor(id: string) {

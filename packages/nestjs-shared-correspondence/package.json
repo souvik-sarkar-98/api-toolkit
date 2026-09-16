@@ -1,5 +1,5 @@
 {
-  "name": "@ssapi-toolkit/nestjs-shared-correspondence",
+  "name": "@ssdev-toolkit/nestjs-shared-correspondence",
   "version": "1.0.0",
   "main": "dist/index.js",
   "files": [
@@ -19,9 +19,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@ssapi-toolkit/nestjs-shared-core": "*",
-    "@ssapi-toolkit/nestjs-shared-auth": "*",
-    "@ssapi-toolkit/nestjs-shared-queue": "*",
+    "@ssdev-toolkit/nestjs-shared-core": "*",
+    "@ssdev-toolkit/nestjs-shared-auth": "*",
+    "@ssdev-toolkit/nestjs-shared-queue": "*",
     "handlebars": "^4.7.8"
   },
   "exports": {

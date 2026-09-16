@@ -5,7 +5,7 @@ import { IUserNotificationRepository } from '../../../domain/repositories/user-n
 import { INotificationRepository } from '../../../domain/repositories/notification.repository';
 import { NotificationMapper } from '../../mappers/notification.mapper';
 import { UserNotificationResponseDto } from '../../dtos/user-notification-response.dto';
-import { PagedResponse } from '@ssapi-toolkit/nestjs-shared-core';
+import { PagedResponse } from '@ssdev-toolkit/nestjs-shared-core';
 
 @QueryHandler(GetUserNotificationsQuery)
 export class GetUserNotificationsHandler

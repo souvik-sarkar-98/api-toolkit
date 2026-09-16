@@ -1,5 +1,5 @@
 import { randomUUID } from 'crypto';
-import { BaseDomain } from '@ssapi-toolkit/nestjs-shared-core';
+import { BaseDomain } from '@ssdev-toolkit/nestjs-shared-core';
 
 export class DocumentMapping extends BaseDomain<string> {
   #refId: string;

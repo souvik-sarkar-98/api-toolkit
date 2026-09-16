@@ -2,7 +2,7 @@ import {
   EntityTypePolicy,
   EntityRecordAccessPolicy,
   IEntityAccessPort,
-} from '@ssapi-toolkit/nestjs-shared-core';
+} from '@ssdev-toolkit/nestjs-shared-core';
 import { CommentModuleOptions } from '../../comment.schema';
 
 const MODULE_PREFIX = 'COMMENT';

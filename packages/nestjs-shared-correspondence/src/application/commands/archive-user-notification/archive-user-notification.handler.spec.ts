@@ -1,11 +1,11 @@
 /**
  * ArchiveUserNotificationHandler unit tests.
  */
-import { ArchiveUserNotificationHandler } from '@ssapi-toolkit/nestjs-shared-correspondence/application/commands/archive-user-notification/archive-user-notification.handler';
-import { ArchiveUserNotificationCommand } from '@ssapi-toolkit/nestjs-shared-correspondence/application/commands/archive-user-notification/archive-user-notification.command';
-import { IUserNotificationRepository } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/repositories/user-notification.repository';
-import { UserNotificationNotFoundError } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/errors/correspondence.errors';
-import { UserNotification } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/aggregates/user-notification.aggregate';
+import { ArchiveUserNotificationHandler } from '@ssdev-toolkit/nestjs-shared-correspondence/application/commands/archive-user-notification/archive-user-notification.handler';
+import { ArchiveUserNotificationCommand } from '@ssdev-toolkit/nestjs-shared-correspondence/application/commands/archive-user-notification/archive-user-notification.command';
+import { IUserNotificationRepository } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/repositories/user-notification.repository';
+import { UserNotificationNotFoundError } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/errors/correspondence.errors';
+import { UserNotification } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/aggregates/user-notification.aggregate';
 
 function makeUN(userId = 'user-1') {
   return UserNotification.create({ notificationId: 'notif-1', userId });

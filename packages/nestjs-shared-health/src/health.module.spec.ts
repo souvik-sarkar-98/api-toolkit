@@ -1,4 +1,4 @@
-import { IGNORE_CAPTCHA, IS_PUBLIC_KEY } from '@ssapi-toolkit/nestjs-shared-auth';
+import { IGNORE_CAPTCHA, IS_PUBLIC_KEY } from '@ssdev-toolkit/nestjs-shared-auth';
 import { HealthFacade } from './application/services/health.facade';
 import { HealthModule } from './health.module';
 import { HEALTH_OPTIONS } from './health.schema';

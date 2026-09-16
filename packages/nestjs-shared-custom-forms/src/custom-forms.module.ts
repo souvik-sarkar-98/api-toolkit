@@ -7,7 +7,7 @@ import {
   DynamicModuleAsyncOptions,
   IEntityAccessPort,
   registerModuleValidator,
-} from '@ssapi-toolkit/nestjs-shared-core';
+} from '@ssdev-toolkit/nestjs-shared-core';
 import {
   CustomFormsModuleOptions,
   CustomFormsOptionsSchema,

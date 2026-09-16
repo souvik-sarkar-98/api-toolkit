@@ -6,7 +6,7 @@ import {
   BaseModuleValidator,
   DynamicModuleAsyncOptions,
   registerModuleValidator,
-} from '@ssapi-toolkit/nestjs-shared-core';
+} from '@ssdev-toolkit/nestjs-shared-core';
 
 import { Cron2ModuleOptions, Cron2OptionsSchema } from './cron.schema';
 import { CRON2_OPTIONS } from './infrastructure/cron-options.token';

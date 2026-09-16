@@ -1,5 +1,5 @@
 import { randomUUID } from 'crypto';
-import { AggregateRoot } from '@ssapi-toolkit/nestjs-shared-core';
+import { AggregateRoot } from '@ssdev-toolkit/nestjs-shared-core';
 import { CommentMention } from '../entities/comment-mention.entity';
 import { CommentAddedEvent, type CommentAddedSnapshot } from '../events/comment-added.event';
 import { CommentUpdatedEvent, type CommentUpdatedSnapshot } from '../events/comment-updated.event';

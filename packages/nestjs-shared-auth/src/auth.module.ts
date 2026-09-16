@@ -13,7 +13,7 @@ import {
   ICACHE_PORT,
   IUserLookupPort,
   registerModuleValidator,
-} from '@ssapi-toolkit/nestjs-shared-core';
+} from '@ssdev-toolkit/nestjs-shared-core';
 
 import { AuthModuleOptions } from './auth-options';
 import { AuthOptionsSchema } from './auth.schema';

@@ -6,7 +6,7 @@ import {
   ApiAutoVoidResponse,
   ApiStringQuery,
   ApiUuidParam,
-} from '@ssapi-toolkit/nestjs-shared-core';
+} from '@ssdev-toolkit/nestjs-shared-core';
 import {
   UnifiedAuthGuard,
   PermissionsGuard,
@@ -14,7 +14,7 @@ import {
   CurrentUser,
   AuthUser,
   requireUserId,
-} from '@ssapi-toolkit/nestjs-shared-auth';
+} from '@ssdev-toolkit/nestjs-shared-auth';
 import { SubscribeUserCommand } from '../../application/commands/subscribe-user/subscribe-user.command';
 import { UnsubscribeUserCommand } from '../../application/commands/unsubscribe-user/unsubscribe-user.command';
 import { UpdateChannelConfigCommand } from '../../application/commands/update-channel-config/update-channel-config.command';

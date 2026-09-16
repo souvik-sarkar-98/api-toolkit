@@ -1,4 +1,4 @@
-import { DomainEvent } from '@ssapi-toolkit/nestjs-shared-core';
+import { DomainEvent } from '@ssdev-toolkit/nestjs-shared-core';
 import type { UserPermission } from '../aggregates/user-permission/user-permission.aggregate';
 
 export type UserPermissionRevokedSnapshot = Pick<

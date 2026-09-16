@@ -1,4 +1,4 @@
-import { DomainEvent } from '@ssapi-toolkit/nestjs-shared-core';
+import { DomainEvent } from '@ssdev-toolkit/nestjs-shared-core';
 import type { UserNotification } from '../aggregates/user-notification.aggregate';
 
 export type UserNotificationArchivedSnapshot = Pick<UserNotification, 'id' | 'notificationId' | 'userId'>;

@@ -1,5 +1,5 @@
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
-import { AccessGatedResponse } from '@ssapi-toolkit/nestjs-shared-core';
+import { AccessGatedResponse } from '@ssdev-toolkit/nestjs-shared-core';
 
 export class DocumentMappingDto {
   @ApiProperty({ example: '7c2e5b84-13af-4d6c-8e90-5a1f3b2c7d68' })

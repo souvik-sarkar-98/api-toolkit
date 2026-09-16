@@ -4,7 +4,7 @@ import { UploadDocumentCommand } from './upload-document.command';
 import { DocumentVisibility } from '../../../domain/enums/document-visibility.enum';
 import { DocumentUploadedEvent } from '../../../domain/events/document-uploaded.event';
 import { DocumentResponseDto } from '../../../presentation/dtos/document-response.dto';
-import { EntityTypeForbiddenError } from '@ssapi-toolkit/nestjs-shared-core';
+import { EntityTypeForbiddenError } from '@ssdev-toolkit/nestjs-shared-core';
 import {
   DocumentLimitReachedError,
   FileSizeExceededError,
@@ -210,7 +210,7 @@ describe('UploadDocumentHandler', () => {
     const accessPort = { canAccess: jest.fn().mockResolvedValue(false) };
     const { handler, storage } = buildHandler({ accessPort });
 
-    const { EntityAccessDeniedError } = await import('@ssapi-toolkit/nestjs-shared-core');
+    const { EntityAccessDeniedError } = await import('@ssdev-toolkit/nestjs-shared-core');
 
     await expect(handler.execute(BASE_COMMAND)).rejects.toThrow(EntityAccessDeniedError);
     expect(storage.uploadFile).not.toHaveBeenCalled();

@@ -1,4 +1,4 @@
-import { QueueHandler, IQueueHandler, Job, JobExecutionContext } from '@ssapi-toolkit/nestjs-shared-queue';
+import { QueueHandler, IQueueHandler, Job, JobExecutionContext } from '@ssdev-toolkit/nestjs-shared-queue';
 import { PurgeSubscriptionsJob } from '../../application/jobs/retention.jobs';
 import { RetentionSchedulerService } from '../../application/retention/retention-scheduler.service';
 

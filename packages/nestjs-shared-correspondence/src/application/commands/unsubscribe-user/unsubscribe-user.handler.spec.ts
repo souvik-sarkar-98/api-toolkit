@@ -1,12 +1,12 @@
 /**
  * UnsubscribeUserHandler unit tests.
  */
-import { UnsubscribeUserHandler } from '@ssapi-toolkit/nestjs-shared-correspondence/application/commands/unsubscribe-user/unsubscribe-user.handler';
-import { UnsubscribeUserCommand } from '@ssapi-toolkit/nestjs-shared-correspondence/application/commands/unsubscribe-user/unsubscribe-user.command';
-import { IResourceSubscriptionRepository } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/repositories/resource-subscription.repository';
-import { SubscriptionNotFoundError } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/errors/correspondence.errors';
-import { ResourceSubscription } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/aggregates/resource-subscription.aggregate';
-import { SubscribedVia } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/subscribed-via.enum';
+import { UnsubscribeUserHandler } from '@ssdev-toolkit/nestjs-shared-correspondence/application/commands/unsubscribe-user/unsubscribe-user.handler';
+import { UnsubscribeUserCommand } from '@ssdev-toolkit/nestjs-shared-correspondence/application/commands/unsubscribe-user/unsubscribe-user.command';
+import { IResourceSubscriptionRepository } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/repositories/resource-subscription.repository';
+import { SubscriptionNotFoundError } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/errors/correspondence.errors';
+import { ResourceSubscription } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/aggregates/resource-subscription.aggregate';
+import { SubscribedVia } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/enums/subscribed-via.enum';
 
 function makeActiveSub() {
   return ResourceSubscription.createUserSubscription({

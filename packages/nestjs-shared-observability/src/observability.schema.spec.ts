@@ -1,4 +1,4 @@
-import { ObservabilityOptionsSchema, normalizeEnvironment } from '@ssapi-toolkit/nestjs-shared-observability';
+import { ObservabilityOptionsSchema, normalizeEnvironment } from '@ssdev-toolkit/nestjs-shared-observability';
 
 describe('ObservabilityOptionsSchema', () => {
   it('accepts an empty object (all optional)', () => {

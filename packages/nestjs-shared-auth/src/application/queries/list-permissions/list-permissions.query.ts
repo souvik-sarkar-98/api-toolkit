@@ -1,4 +1,4 @@
-import { BaseFilter } from '@ssapi-toolkit/nestjs-shared-core';
+import { BaseFilter } from '@ssdev-toolkit/nestjs-shared-core';
 import { PermissionFilter } from '../../../domain/aggregates/permission/permission.aggregate';
 
 export class ListPermissionsQuery {

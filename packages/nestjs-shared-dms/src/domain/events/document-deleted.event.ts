@@ -1,4 +1,4 @@
-import { DomainEvent } from '@ssapi-toolkit/nestjs-shared-core';
+import { DomainEvent } from '@ssdev-toolkit/nestjs-shared-core';
 import type { Document } from '../aggregates/document.aggregate';
 
 export type DocumentDeletedSnapshot = Pick<Document, 'id' | 'fileName' | 'remotePath' | 'uploadedById'>;

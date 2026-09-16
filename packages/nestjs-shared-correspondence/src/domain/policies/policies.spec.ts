@@ -2,13 +2,13 @@
  * Domain policy tests — EmailRecipientPolicy & PushRecipientPolicy.
  * Pure unit tests, no framework imports.
  */
-import { EmailRecipientPolicy } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/policies/email-recipient.policy';
-import { PushRecipientPolicy } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/policies/push-recipient.policy';
-import { ResourceSubscription } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/aggregates/resource-subscription.aggregate';
-import { SubscriptionChannel } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/entities/subscription-channel.entity';
-import { ChannelType } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/channel-type.enum';
-import { EmailRole } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/email-role.enum';
-import { SubscribedVia } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/subscribed-via.enum';
+import { EmailRecipientPolicy } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/policies/email-recipient.policy';
+import { PushRecipientPolicy } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/policies/push-recipient.policy';
+import { ResourceSubscription } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/aggregates/resource-subscription.aggregate';
+import { SubscriptionChannel } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/entities/subscription-channel.entity';
+import { ChannelType } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/enums/channel-type.enum';
+import { EmailRole } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/enums/email-role.enum';
+import { SubscribedVia } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/enums/subscribed-via.enum';
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 

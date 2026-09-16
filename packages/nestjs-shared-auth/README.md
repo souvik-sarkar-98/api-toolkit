@@ -1,11 +1,11 @@
-# `@ssapi-toolkit/nestjs-shared-auth`
+# `@ssdev-toolkit/nestjs-shared-auth`
 
 JWT, API keys, reCAPTCHA, throttling, and RBAC (roles, groups, permissions, scoped permissions).
 
 ## Install
 
 ```bash
-npm install @ssapi-toolkit/nestjs-shared-core @ssapi-toolkit/nestjs-shared-auth
+npm install @ssdev-toolkit/nestjs-shared-core @ssdev-toolkit/nestjs-shared-auth
 ```
 
 The host must register Prisma adapters for the auth repository tokens and provide cache (`ICACHE_PORT`). JWT verification, API-key hashing, and reCAPTCHA default adapters can be replaced via ports.
@@ -40,7 +40,7 @@ AuthModule.forRootAsync({
 ## Build (this repo)
 
 ```bash
-npm run build -w @ssapi-toolkit/nestjs-shared-auth
+npm run build -w @ssdev-toolkit/nestjs-shared-auth
 ```
 
 Overview: [root README](../../README.md).

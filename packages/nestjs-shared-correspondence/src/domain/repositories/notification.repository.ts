@@ -1,4 +1,4 @@
-import { IRepository } from '@ssapi-toolkit/nestjs-shared-core';
+import { IRepository } from '@ssdev-toolkit/nestjs-shared-core';
 import { Notification, NotificationFilter } from '../aggregates/notification.aggregate';
 import { UserNotification } from '../aggregates/user-notification.aggregate';
 

@@ -1,5 +1,5 @@
 import { randomUUID } from 'crypto';
-import { AggregateRoot } from '@ssapi-toolkit/nestjs-shared-core';
+import { AggregateRoot } from '@ssdev-toolkit/nestjs-shared-core';
 import { UserRoleGroupGrantedEvent, type UserRoleGroupGrantedSnapshot } from '../../events/user-role-group-granted.event';
 import { UserRoleGroupRevokedEvent, type UserRoleGroupRevokedSnapshot } from '../../events/user-role-group-revoked.event';
 import { UserRoleGroupAlreadyRevokedError } from '../../errors/auth.errors';

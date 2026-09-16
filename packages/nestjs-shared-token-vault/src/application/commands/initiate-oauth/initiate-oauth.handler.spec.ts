@@ -1,10 +1,10 @@
-import { InitiateOAuthHandler } from '@ssapi-toolkit/nestjs-shared-token-vault/application/commands/initiate-oauth/initiate-oauth.handler';
-import { InitiateOAuthCommand } from '@ssapi-toolkit/nestjs-shared-token-vault/application/commands/initiate-oauth/initiate-oauth.command';
-import { OAUTH_PROVIDER_REGISTRY } from '@ssapi-toolkit/nestjs-shared-token-vault/application/ports/oauth-provider.port';
+import { InitiateOAuthHandler } from '@ssdev-toolkit/nestjs-shared-token-vault/application/commands/initiate-oauth/initiate-oauth.handler';
+import { InitiateOAuthCommand } from '@ssdev-toolkit/nestjs-shared-token-vault/application/commands/initiate-oauth/initiate-oauth.command';
+import { OAUTH_PROVIDER_REGISTRY } from '@ssdev-toolkit/nestjs-shared-token-vault/application/ports/oauth-provider.port';
 import {
   ProviderNotConfiguredError,
   InvalidScopeError,
-} from '@ssapi-toolkit/nestjs-shared-token-vault/domain/errors/token-vault.errors';
+} from '@ssdev-toolkit/nestjs-shared-token-vault/domain/errors/token-vault.errors';
 
 const makeProvider = (overrides: Partial<{
   isConfigured: boolean;

@@ -1,5 +1,5 @@
 import 'reflect-metadata';
-import { BusinessError } from '@ssapi-toolkit/nestjs-shared-core';
+import { BusinessError } from '@ssdev-toolkit/nestjs-shared-core';
 import {
   DocumentNotFoundError,
   DocumentAccessDeniedError,

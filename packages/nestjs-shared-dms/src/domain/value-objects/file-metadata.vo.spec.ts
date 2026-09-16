@@ -1,6 +1,6 @@
 import 'reflect-metadata';
 import { FileMetadata } from './file-metadata.vo';
-import { BusinessError } from '@ssapi-toolkit/nestjs-shared-core';
+import { BusinessError } from '@ssdev-toolkit/nestjs-shared-core';
 
 describe('FileMetadata value object', () => {
   describe('of() — factory validation', () => {

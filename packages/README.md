@@ -4,20 +4,20 @@ NestJS libraries for API hosts. Most modules follow DDD layers (domain → appli
 
 | Package | Role |
 |---------|------|
-| [`@ssapi-toolkit/nestjs-shared-core`](nestjs-shared-core/README.md) | Aggregates, errors, envelopes, bootstrap, `CoreModule` |
-| [`@ssapi-toolkit/nestjs-shared-persistence`](nestjs-shared-persistence/README.md) | Prisma CRUD base, Redis cache, `DatabaseModule` |
-| [`@ssapi-toolkit/nestjs-shared-observability`](nestjs-shared-observability/README.md) | Technical-error alerts (`ObservabilityModule`) |
-| [`@ssapi-toolkit/nestjs-shared-health`](nestjs-shared-health/README.md) | Liveness / readiness / metrics probes |
-| [`@ssapi-toolkit/nestjs-shared-auth`](nestjs-shared-auth/README.md) | JWT/API-key/RBAC guards, `AuthFacade` |
-| [`@ssapi-toolkit/nestjs-shared-queue`](nestjs-shared-queue/README.md) | BullMQ jobs, `@QueueHandler`, `QueueFacade` |
-| [`@ssapi-toolkit/nestjs-shared-cron`](nestjs-shared-cron/README.md) | Scheduled jobs over a queue/store port |
-| [`@ssapi-toolkit/nestjs-shared-token-vault`](nestjs-shared-token-vault/README.md) | OAuth account/token vault, `TokenVaultFacade` |
-| [`@ssapi-toolkit/nestjs-shared-json-store`](nestjs-shared-json-store/README.md) | Versioned JSON documents, `JsonStoreFacade` |
-| [`@ssapi-toolkit/nestjs-shared-custom-forms`](nestjs-shared-custom-forms/README.md) | Form definitions and submissions, `CustomFormsFacade` |
-| [`@ssapi-toolkit/nestjs-shared-comment`](nestjs-shared-comment/README.md) | Entity comments and mentions |
-| [`@ssapi-toolkit/nestjs-shared-correspondence`](nestjs-shared-correspondence/README.md) | Email / in-app / push notifications |
-| [`@ssapi-toolkit/nestjs-shared-dms`](nestjs-shared-dms/README.md) | Document storage (Firebase or host `IStorageProvider`), `DmsFacade` |
-| [`@ssapi-toolkit/nestjs-shared-document-generator`](nestjs-shared-document-generator/README.md) | Excel / PDF generation |
+| [`@ssdev-toolkit/nestjs-shared-core`](nestjs-shared-core/README.md) | Aggregates, errors, envelopes, bootstrap, `CoreModule` |
+| [`@ssdev-toolkit/nestjs-shared-persistence`](nestjs-shared-persistence/README.md) | Prisma CRUD base, Redis cache, `DatabaseModule` |
+| [`@ssdev-toolkit/nestjs-shared-observability`](nestjs-shared-observability/README.md) | Technical-error alerts (`ObservabilityModule`) |
+| [`@ssdev-toolkit/nestjs-shared-health`](nestjs-shared-health/README.md) | Liveness / readiness / metrics probes |
+| [`@ssdev-toolkit/nestjs-shared-auth`](nestjs-shared-auth/README.md) | JWT/API-key/RBAC guards, `AuthFacade` |
+| [`@ssdev-toolkit/nestjs-shared-queue`](nestjs-shared-queue/README.md) | BullMQ jobs, `@QueueHandler`, `QueueFacade` |
+| [`@ssdev-toolkit/nestjs-shared-cron`](nestjs-shared-cron/README.md) | Scheduled jobs over a queue/store port |
+| [`@ssdev-toolkit/nestjs-shared-token-vault`](nestjs-shared-token-vault/README.md) | OAuth account/token vault, `TokenVaultFacade` |
+| [`@ssdev-toolkit/nestjs-shared-json-store`](nestjs-shared-json-store/README.md) | Versioned JSON documents, `JsonStoreFacade` |
+| [`@ssdev-toolkit/nestjs-shared-custom-forms`](nestjs-shared-custom-forms/README.md) | Form definitions and submissions, `CustomFormsFacade` |
+| [`@ssdev-toolkit/nestjs-shared-comment`](nestjs-shared-comment/README.md) | Entity comments and mentions |
+| [`@ssdev-toolkit/nestjs-shared-correspondence`](nestjs-shared-correspondence/README.md) | Email / in-app / push notifications |
+| [`@ssdev-toolkit/nestjs-shared-dms`](nestjs-shared-dms/README.md) | Document storage (Firebase or host `IStorageProvider`), `DmsFacade` |
+| [`@ssdev-toolkit/nestjs-shared-document-generator`](nestjs-shared-document-generator/README.md) | Excel / PDF generation |
 
 Each package has its own `package.json` and builds to `dist/**`. Consumers install published versions from npm, or use workspace `"*"` ranges inside this monorepo.
 

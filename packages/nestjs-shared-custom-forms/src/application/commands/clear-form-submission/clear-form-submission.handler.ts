@@ -1,6 +1,6 @@
 import { Inject, Injectable, Optional } from '@nestjs/common';
 import { CommandHandler, EventBus, ICommandHandler } from '@nestjs/cqrs';
-import { IEntityAccessPort } from '@ssapi-toolkit/nestjs-shared-core';
+import { IEntityAccessPort } from '@ssdev-toolkit/nestjs-shared-core';
 import { FormNotFoundError } from '../../../domain/errors/form.errors';
 import { FormSubmissionClearedEvent } from '../../../domain/events/form-submission-cleared.event';
 import { FormAccessPolicy } from '../../../domain/policies/form-access.policy';

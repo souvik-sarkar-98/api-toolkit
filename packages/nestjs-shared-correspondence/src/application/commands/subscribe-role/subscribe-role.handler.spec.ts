@@ -1,12 +1,12 @@
 /**
  * SubscribeRoleHandler unit tests.
  */
-import { SubscribeRoleHandler } from '@ssapi-toolkit/nestjs-shared-correspondence/application/commands/subscribe-role/subscribe-role.handler';
-import { SubscribeRoleCommand } from '@ssapi-toolkit/nestjs-shared-correspondence/application/commands/subscribe-role/subscribe-role.command';
-import { IResourceSubscriptionRepository } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/repositories/resource-subscription.repository';
-import { ResourceSubscription } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/aggregates/resource-subscription.aggregate';
-import { SubscribedVia } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/subscribed-via.enum';
-import { SubscriberType } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/subscriber-type.enum';
+import { SubscribeRoleHandler } from '@ssdev-toolkit/nestjs-shared-correspondence/application/commands/subscribe-role/subscribe-role.handler';
+import { SubscribeRoleCommand } from '@ssdev-toolkit/nestjs-shared-correspondence/application/commands/subscribe-role/subscribe-role.command';
+import { IResourceSubscriptionRepository } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/repositories/resource-subscription.repository';
+import { ResourceSubscription } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/aggregates/resource-subscription.aggregate';
+import { SubscribedVia } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/enums/subscribed-via.enum';
+import { SubscriberType } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/enums/subscriber-type.enum';
 import type { CorrespondenceModuleOptions } from '../../../correspondence.schema';
 
 function makeActiveRoleSub() {

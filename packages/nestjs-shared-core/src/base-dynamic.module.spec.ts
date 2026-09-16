@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { BaseDynamicModule } from '@ssapi-toolkit/nestjs-shared-core';
+import { BaseDynamicModule } from '@ssdev-toolkit/nestjs-shared-core';
 
 const TEST_OPTIONS = Symbol('TEST_OPTIONS');
 

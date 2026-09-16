@@ -1,6 +1,6 @@
-import { BaseFilter, SortOrder } from "@ssapi-toolkit/nestjs-shared-core";
-import { Page } from "@ssapi-toolkit/nestjs-shared-core";
-import type { IRepository } from "@ssapi-toolkit/nestjs-shared-core";
+import { BaseFilter, SortOrder } from "@ssdev-toolkit/nestjs-shared-core";
+import { Page } from "@ssdev-toolkit/nestjs-shared-core";
+import type { IRepository } from "@ssdev-toolkit/nestjs-shared-core";
 import type { PrismaClientLike } from "./base-prisma.service";
 import { PrismaRepositoryBase } from "./prisma-repository.base";
 import type {

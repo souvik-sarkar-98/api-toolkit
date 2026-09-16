@@ -1,8 +1,8 @@
 import { RequestMethod } from '@nestjs/common';
-import { applyConfig } from '@ssapi-toolkit/nestjs-shared-core';
+import { applyConfig } from '@ssdev-toolkit/nestjs-shared-core';
 
 // Mock swagger separately since it's a peer dep
-jest.mock('@ssapi-toolkit/nestjs-shared-core/presentation/config/swagger.config', () => ({
+jest.mock('@ssdev-toolkit/nestjs-shared-core/presentation/config/swagger.config', () => ({
   configureSwagger: jest.fn(),
 }));
 

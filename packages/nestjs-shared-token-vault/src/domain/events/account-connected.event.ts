@@ -1,4 +1,4 @@
-import { DomainEvent } from '@ssapi-toolkit/nestjs-shared-core';
+import { DomainEvent } from '@ssdev-toolkit/nestjs-shared-core';
 import type { OAuthAccount } from '../aggregates/oauth-account/oauth-account.aggregate';
 
 export type AccountConnectedSnapshot = Pick<OAuthAccount, 'id' | 'provider' | 'email'>;

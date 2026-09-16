@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { BasePrismaService, PRISMA_CLIENT } from '@ssapi-toolkit/nestjs-shared-persistence/prisma/base-prisma.service';
-import { DATABASE_OPTIONS } from '@ssapi-toolkit/nestjs-shared-persistence/database-options.token';
+import { BasePrismaService, PRISMA_CLIENT } from '@ssdev-toolkit/nestjs-shared-persistence/prisma/base-prisma.service';
+import { DATABASE_OPTIONS } from '@ssdev-toolkit/nestjs-shared-persistence/database-options.token';
 
 function makeMockPrismaClient() {
   return {

@@ -1,4 +1,4 @@
-import { RootEvent } from '@ssapi-toolkit/nestjs-shared-core';
+import { RootEvent } from '@ssdev-toolkit/nestjs-shared-core';
 
 /**
  * Emitted after all form submission values for an entity record are cleared.

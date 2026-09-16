@@ -3,7 +3,7 @@ import { Inject, Injectable } from '@nestjs/common';
 import { ListRolesQuery } from './list-roles.query';
 import { IRoleRepository } from '../../../domain/repositories/role.repository';
 import { RoleResponseMapper } from '../../mappers/role-response.mapper';
-import { PagedResponse } from '@ssapi-toolkit/nestjs-shared-core';
+import { PagedResponse } from '@ssdev-toolkit/nestjs-shared-core';
 import { RoleResponseDto } from '../../dtos/response/auth-response.dtos';
 
 @QueryHandler(ListRolesQuery)

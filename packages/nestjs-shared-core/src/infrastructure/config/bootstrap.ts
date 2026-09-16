@@ -16,7 +16,7 @@ import { applyConfig, AppConfigOptions } from './app.config';
  *
  * @example
  * // main.ts
- * import { bootstrapApp } from '@ssapi-toolkit/nestjs-shared-core';
+ * import { bootstrapApp } from '@ssdev-toolkit/nestjs-shared-core';
  * import { AppModule } from './app.module';
  *
  * async function main() {

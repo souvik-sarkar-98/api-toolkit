@@ -4,7 +4,7 @@ import {
   EntityTypeForbiddenError,
   EntityRecordAccessPolicy,
   IEntityAccessPort,
-} from '@ssapi-toolkit/nestjs-shared-core';
+} from '@ssdev-toolkit/nestjs-shared-core';
 import { DocumentAccessDeniedError } from '../../domain/errors/document.errors';
 import { DmsModuleOptions, EntityTypeConfig } from '../../dms.schema';
 
