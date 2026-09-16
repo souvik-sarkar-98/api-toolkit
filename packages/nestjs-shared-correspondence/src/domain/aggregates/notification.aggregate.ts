@@ -1,5 +1,5 @@
 import { randomUUID } from 'crypto';
-import { AggregateRoot } from '@ssapi-toolkit/nestjs-shared-core';
+import { AggregateRoot } from '@ssdev-toolkit/nestjs-shared-core';
 import { NotificationCreatedEvent, type NotificationCreatedSnapshot } from '../events/notification-created.event';
 import { NotificationPriority, NotificationType } from '../enums/notification-type.enum';
 

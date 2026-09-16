@@ -1,5 +1,5 @@
 {
-  "name": "@ssapi-toolkit/nestjs-shared-document-generator",
+  "name": "@ssdev-toolkit/nestjs-shared-document-generator",
   "version": "1.0.0",
   "main": "dist/index.js",
   "files": [

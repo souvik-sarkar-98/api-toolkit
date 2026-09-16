@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
-import { Page } from '@ssapi-toolkit/nestjs-shared-core';
+import { Page } from '@ssdev-toolkit/nestjs-shared-core';
 import { QueueProcessingService } from '../../../infrastructure/services/queue-processing.service';
 import { QueueJobResponseMapper } from '../../mappers/queue-job-response.mapper';
 import { JobDetail } from '../../../presentation/dto/queue.dto';

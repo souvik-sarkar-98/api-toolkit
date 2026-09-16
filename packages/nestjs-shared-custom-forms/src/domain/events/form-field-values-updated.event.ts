@@ -1,4 +1,4 @@
-import { DomainEvent } from '@ssapi-toolkit/nestjs-shared-core';
+import { DomainEvent } from '@ssdev-toolkit/nestjs-shared-core';
 import type { FormFieldValue } from '../entities/form-field-value/form-field-value.entity';
 
 export type FormFieldValuesUpdatedSnapshot = Pick<

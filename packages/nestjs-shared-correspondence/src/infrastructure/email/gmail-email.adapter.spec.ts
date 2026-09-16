@@ -25,7 +25,7 @@ jest.mock('google-auth-library', () => ({
 }));
 
 import { Logger } from '@nestjs/common';
-import { GmailEmailAdapter } from '@ssapi-toolkit/nestjs-shared-correspondence/infrastructure/email/gmail-email.adapter';
+import { GmailEmailAdapter } from '@ssdev-toolkit/nestjs-shared-correspondence/infrastructure/email/gmail-email.adapter';
 
 function getGmailMocks() {
   const mod = require('@googleapis/gmail');

@@ -1,5 +1,5 @@
 import { randomUUID } from 'crypto';
-import { AggregateRoot } from '@ssapi-toolkit/nestjs-shared-core';
+import { AggregateRoot } from '@ssdev-toolkit/nestjs-shared-core';
 import { AccountConnectedEvent, type AccountConnectedSnapshot } from '../../events/account-connected.event';
 import { AccountDisconnectedEvent, type AccountDisconnectedSnapshot } from '../../events/account-disconnected.event';
 

@@ -2,16 +2,16 @@
  * Domain events — payload correctness tests.
  * Pure unit tests, no framework imports.
  */
-import { Notification } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/aggregates/notification.aggregate';
-import { UserNotification } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/aggregates/user-notification.aggregate';
-import { ResourceSubscription } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/aggregates/resource-subscription.aggregate';
-import { NotificationCreatedEvent, type NotificationCreatedSnapshot } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/events/notification-created.event';
-import { UserNotificationReadEvent, type UserNotificationReadSnapshot } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/events/user-notification-read.event';
-import { UserNotificationArchivedEvent, type UserNotificationArchivedSnapshot } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/events/user-notification-archived.event';
-import { NotificationPushDeliveredEvent, type NotificationPushDeliveredSnapshot } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/events/notification-push-delivered.event';
-import { SubscriptionDeactivatedEvent, type SubscriptionDeactivatedSnapshot } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/events/subscription-deactivated.event';
-import { NotificationType } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/notification-type.enum';
-import { SubscribedVia } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/subscribed-via.enum';
+import { Notification } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/aggregates/notification.aggregate';
+import { UserNotification } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/aggregates/user-notification.aggregate';
+import { ResourceSubscription } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/aggregates/resource-subscription.aggregate';
+import { NotificationCreatedEvent, type NotificationCreatedSnapshot } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/events/notification-created.event';
+import { UserNotificationReadEvent, type UserNotificationReadSnapshot } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/events/user-notification-read.event';
+import { UserNotificationArchivedEvent, type UserNotificationArchivedSnapshot } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/events/user-notification-archived.event';
+import { NotificationPushDeliveredEvent, type NotificationPushDeliveredSnapshot } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/events/notification-push-delivered.event';
+import { SubscriptionDeactivatedEvent, type SubscriptionDeactivatedSnapshot } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/events/subscription-deactivated.event';
+import { NotificationType } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/enums/notification-type.enum';
+import { SubscribedVia } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/enums/subscribed-via.enum';
 
 describe('Domain events', () => {
   describe('NotificationCreatedEvent', () => {

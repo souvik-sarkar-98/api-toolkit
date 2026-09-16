@@ -1,11 +1,11 @@
-# `@ssapi-toolkit/nestjs-shared-json-store`
+# `@ssdev-toolkit/nestjs-shared-json-store`
 
 Named JSON documents with create / update / upsert / list. Other modules use `JsonStoreFacade`.
 
 ## Install
 
 ```bash
-npm install @ssapi-toolkit/nestjs-shared-core @ssapi-toolkit/nestjs-shared-json-store
+npm install @ssdev-toolkit/nestjs-shared-core @ssdev-toolkit/nestjs-shared-json-store
 ```
 
 The host registers `IJsonDocumentRepository` (typically Prisma). Optional `IJsonDocumentPayloadValidatorPort` (default no-op).
@@ -32,7 +32,7 @@ Do not inject `IJsonDocumentRepository` from feature modules.
 ## Build (this repo)
 
 ```bash
-npm run build -w @ssapi-toolkit/nestjs-shared-json-store
+npm run build -w @ssdev-toolkit/nestjs-shared-json-store
 ```
 
 Overview: [root README](../../README.md).

@@ -1,6 +1,6 @@
 import { Inject, Injectable, Logger } from '@nestjs/common';
 import { Credentials, OAuth2Client, CodeChallengeMethod } from 'google-auth-library';
-import { AppTechnicalError } from '@ssapi-toolkit/nestjs-shared-core';
+import { AppTechnicalError } from '@ssdev-toolkit/nestjs-shared-core';
 import { EventBus } from '@nestjs/cqrs';
 import { TOKEN_VAULT_OPTIONS, TokenVaultModuleOptions } from '../../token-vault-options';
 import type {

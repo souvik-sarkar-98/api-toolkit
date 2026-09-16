@@ -1,12 +1,12 @@
-import { RevokeTokenHandler } from '@ssapi-toolkit/nestjs-shared-token-vault/application/commands/revoke-token/revoke-token.handler';
-import { RevokeTokenCommand } from '@ssapi-toolkit/nestjs-shared-token-vault/application/commands/revoke-token/revoke-token.command';
+import { RevokeTokenHandler } from '@ssdev-toolkit/nestjs-shared-token-vault/application/commands/revoke-token/revoke-token.handler';
+import { RevokeTokenCommand } from '@ssdev-toolkit/nestjs-shared-token-vault/application/commands/revoke-token/revoke-token.command';
 import {
   ProviderNotConfiguredError,
   TokenNotFoundError,
-} from '@ssapi-toolkit/nestjs-shared-token-vault/domain/errors/token-vault.errors';
-import { EncryptedToken } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/value-objects/encrypted-token.vo';
-import { OAuthToken } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/aggregates/oauth-token/oauth-token.aggregate';
-import { TokenRevokedEvent } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/events/token-revoked.event';
+} from '@ssdev-toolkit/nestjs-shared-token-vault/domain/errors/token-vault.errors';
+import { EncryptedToken } from '@ssdev-toolkit/nestjs-shared-token-vault/domain/value-objects/encrypted-token.vo';
+import { OAuthToken } from '@ssdev-toolkit/nestjs-shared-token-vault/domain/aggregates/oauth-token/oauth-token.aggregate';
+import { TokenRevokedEvent } from '@ssdev-toolkit/nestjs-shared-token-vault/domain/events/token-revoked.event';
 import { EventBus, IEvent } from '@nestjs/cqrs';
 
 const SECRET = 'super-secret-key-that-is-at-least-32chars!!';

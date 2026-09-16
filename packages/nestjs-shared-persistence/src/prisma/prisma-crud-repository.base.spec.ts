@@ -1,7 +1,7 @@
-import { BaseFilter } from '@ssapi-toolkit/nestjs-shared-core';
-import type { AuditedDatabaseClient } from '@ssapi-toolkit/nestjs-shared-persistence/prisma/audited-database-client.interface';
-import type { PrismaClientLike } from '@ssapi-toolkit/nestjs-shared-persistence/prisma/base-prisma.service';
-import { PrismaCrudRepositoryBase } from '@ssapi-toolkit/nestjs-shared-persistence/prisma/prisma-crud-repository.base';
+import { BaseFilter } from '@ssdev-toolkit/nestjs-shared-core';
+import type { AuditedDatabaseClient } from '@ssdev-toolkit/nestjs-shared-persistence/prisma/audited-database-client.interface';
+import type { PrismaClientLike } from '@ssdev-toolkit/nestjs-shared-persistence/prisma/base-prisma.service';
+import { PrismaCrudRepositoryBase } from '@ssdev-toolkit/nestjs-shared-persistence/prisma/prisma-crud-repository.base';
 
 interface TestRow {
   id: string;

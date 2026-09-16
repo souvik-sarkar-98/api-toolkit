@@ -11,7 +11,7 @@ import {
   NotificationAlreadyArchivedError,
   TokenNotAvailableError,
   EmailDeliveryFailedError,
-} from '@ssapi-toolkit/nestjs-shared-correspondence/domain/errors/correspondence.errors';
+} from '@ssdev-toolkit/nestjs-shared-correspondence/domain/errors/correspondence.errors';
 
 describe('Domain errors', () => {
   describe('NotificationNotFoundError', () => {

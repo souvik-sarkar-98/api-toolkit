@@ -1,5 +1,5 @@
 import { Inject, Injectable, Logger, Optional } from '@nestjs/common';
-import { ICACHE_PORT, ICachePort, IUserLookupPort, UserInfo } from '@ssapi-toolkit/nestjs-shared-core';
+import { ICACHE_PORT, ICachePort, IUserLookupPort, UserInfo } from '@ssdev-toolkit/nestjs-shared-core';
 import { IUserAccessPort } from '../../application/ports/user-access.port';
 import { AuthUser, ScopedRbacContext } from '../../application/models/auth-user';
 import { AUTH_OPTIONS } from '../auth-options.token';

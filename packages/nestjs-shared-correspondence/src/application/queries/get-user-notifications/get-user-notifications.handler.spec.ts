@@ -1,15 +1,15 @@
 /**
  * GetUserNotificationsHandler unit tests.
  */
-import { GetUserNotificationsHandler } from '@ssapi-toolkit/nestjs-shared-correspondence/application/queries/get-user-notifications/get-user-notifications.handler';
-import { GetUserNotificationsQuery } from '@ssapi-toolkit/nestjs-shared-correspondence/application/queries/get-user-notifications/get-user-notifications.query';
-import { IUserNotificationRepository } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/repositories/user-notification.repository';
-import { INotificationRepository } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/repositories/notification.repository';
-import { UserNotification } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/aggregates/user-notification.aggregate';
-import { Notification } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/aggregates/notification.aggregate';
-import { NotificationType } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/notification-type.enum';
-import { UserNotificationFilter } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/aggregates/user-notification.aggregate';
-import { BaseFilter, Page } from '@ssapi-toolkit/nestjs-shared-core';
+import { GetUserNotificationsHandler } from '@ssdev-toolkit/nestjs-shared-correspondence/application/queries/get-user-notifications/get-user-notifications.handler';
+import { GetUserNotificationsQuery } from '@ssdev-toolkit/nestjs-shared-correspondence/application/queries/get-user-notifications/get-user-notifications.query';
+import { IUserNotificationRepository } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/repositories/user-notification.repository';
+import { INotificationRepository } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/repositories/notification.repository';
+import { UserNotification } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/aggregates/user-notification.aggregate';
+import { Notification } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/aggregates/notification.aggregate';
+import { NotificationType } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/enums/notification-type.enum';
+import { UserNotificationFilter } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/aggregates/user-notification.aggregate';
+import { BaseFilter, Page } from '@ssdev-toolkit/nestjs-shared-core';
 
 function query(props: UserNotificationFilter, pageIndex?: number, pageSize?: number) {
   return new GetUserNotificationsQuery(new BaseFilter<UserNotificationFilter>(props, pageIndex, pageSize));

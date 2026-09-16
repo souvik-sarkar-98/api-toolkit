@@ -1,4 +1,4 @@
-import { CacheService } from '@ssapi-toolkit/nestjs-shared-persistence/cache/cache.service';
+import { CacheService } from '@ssdev-toolkit/nestjs-shared-persistence/cache/cache.service';
 
 describe('CacheService', () => {
   function makeService() {

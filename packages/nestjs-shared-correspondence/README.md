@@ -1,11 +1,11 @@
-# `@ssapi-toolkit/nestjs-shared-correspondence`
+# `@ssdev-toolkit/nestjs-shared-correspondence`
 
 Notifications across email, in-app, and push. Host apps brand email layouts and supply sender/push adapters.
 
 ## Install
 
 ```bash
-npm install @ssapi-toolkit/nestjs-shared-core @ssapi-toolkit/nestjs-shared-queue @ssapi-toolkit/nestjs-shared-correspondence
+npm install @ssdev-toolkit/nestjs-shared-core @ssdev-toolkit/nestjs-shared-queue @ssdev-toolkit/nestjs-shared-correspondence
 ```
 
 `CorrespondenceModule` **requires** a `queueModule` override (`QueueModule.forRoot` / `forRootAsync` from the host). Register email, push, template, and layout ports in the host. Persistence tokens (`INotificationRepository`, …) are host-only.
@@ -40,7 +40,7 @@ Email **message** links (CTA, unsubscribe) are payload. Do not load remote fonts
 ## Build (this repo)
 
 ```bash
-npm run build -w @ssapi-toolkit/nestjs-shared-correspondence
+npm run build -w @ssdev-toolkit/nestjs-shared-correspondence
 ```
 
 Overview: [root README](../../README.md).

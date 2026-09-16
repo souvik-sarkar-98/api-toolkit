@@ -1,11 +1,11 @@
-# `@ssapi-toolkit/nestjs-shared-document-generator`
+# `@ssdev-toolkit/nestjs-shared-document-generator`
 
 Excel and PDF builders (ExcelJS / PDFKit). No Prisma, no CQRS — a Nest module around document services.
 
 ## Install
 
 ```bash
-npm install @ssapi-toolkit/nestjs-shared-document-generator
+npm install @ssdev-toolkit/nestjs-shared-document-generator
 ```
 
 Host dependencies typically include `exceljs` and `pdfkit` (already used by this monorepo).
@@ -32,7 +32,7 @@ Keep generated files as bytes or host storage uploads; this package does not tal
 ## Build (this repo)
 
 ```bash
-npm run build -w @ssapi-toolkit/nestjs-shared-document-generator
+npm run build -w @ssdev-toolkit/nestjs-shared-document-generator
 ```
 
 Overview: [root README](../../README.md).

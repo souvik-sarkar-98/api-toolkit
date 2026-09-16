@@ -1,5 +1,5 @@
 import { randomUUID } from 'crypto';
-import { AggregateRoot } from '@ssapi-toolkit/nestjs-shared-core';
+import { AggregateRoot } from '@ssdev-toolkit/nestjs-shared-core';
 import { FormStatus } from '../../enums/form-status.enum';
 import { FormFieldDefinition } from '../../entities/form-field-definition/form-field-definition.entity';
 import { CustomFieldType } from '../../enums/custom-field-type.enum';

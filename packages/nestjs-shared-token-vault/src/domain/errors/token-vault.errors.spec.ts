@@ -9,8 +9,8 @@ import {
   DuplicateAuthorizationCodeError,
   AmbiguousTokenSelectionError,
   OAuthCallbackError,
-} from '@ssapi-toolkit/nestjs-shared-token-vault/domain/errors/token-vault.errors';
-import { BusinessError } from '@ssapi-toolkit/nestjs-shared-core';
+} from '@ssdev-toolkit/nestjs-shared-token-vault/domain/errors/token-vault.errors';
+import { BusinessError } from '@ssdev-toolkit/nestjs-shared-core';
 
 describe('Token-vault2 domain errors', () => {
   describe('ProviderNotConfiguredError', () => {

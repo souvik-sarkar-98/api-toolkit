@@ -20,8 +20,8 @@ import {
   ApiAutoResponse,
   ApiKeyParam,
   ENVELOPE_EXAMPLES,
-} from "@ssapi-toolkit/nestjs-shared-core";
-import { RequirePermissions } from "@ssapi-toolkit/nestjs-shared-auth";
+} from "@ssdev-toolkit/nestjs-shared-core";
+import { RequirePermissions } from "@ssdev-toolkit/nestjs-shared-auth";
 import { CleanJobsCommand } from "../../application/commands/clean-jobs/clean-jobs.command";
 import { PauseQueueCommand } from "../../application/commands/pause-queue/pause-queue.command";
 import { RemoveJobCommand } from "../../application/commands/remove-job/remove-job.command";

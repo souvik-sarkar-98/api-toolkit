@@ -2,7 +2,7 @@ import { Inject, Injectable, OnModuleInit } from '@nestjs/common';
 import { IJwtVerifierPort } from '../../application/ports/jwt-verifier.port';
 import { IUserAccessPort } from '../../application/ports/user-access.port';
 import { AuthUser } from '../../application/models/auth-user';
-import { BusinessError } from '@ssapi-toolkit/nestjs-shared-core';
+import { BusinessError } from '@ssdev-toolkit/nestjs-shared-core';
 import { AUTH_OPTIONS } from '../auth-options.token';
 import { AuthModuleOptions } from '../../auth-options';
 

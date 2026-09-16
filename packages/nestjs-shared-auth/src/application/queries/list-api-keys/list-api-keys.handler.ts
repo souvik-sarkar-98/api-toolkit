@@ -3,7 +3,7 @@ import { Inject, Injectable } from '@nestjs/common';
 import { ListApiKeysQuery } from './list-api-keys.query';
 import { IApiKeyRepository } from '../../../domain/repositories/api-key.repository';
 import { ApiKeyResponseMapper } from '../../mappers/api-key-response.mapper';
-import { BaseFilter, PagedResponse } from '@ssapi-toolkit/nestjs-shared-core';
+import { BaseFilter, PagedResponse } from '@ssdev-toolkit/nestjs-shared-core';
 import { ApiKeyResponseDto } from '../../dtos/response/auth-response.dtos';
 import { ApiKeyFilter } from '../../../domain/aggregates/api-key/api-key.aggregate';
 

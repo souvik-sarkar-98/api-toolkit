@@ -2,14 +2,14 @@
  * UserNotification aggregate — pure domain unit tests.
  * No NestJS imports, no Prisma, no I/O.
  */
-import { UserNotification } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/aggregates/user-notification.aggregate';
-import { UserNotificationReadEvent } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/events/user-notification-read.event';
-import { UserNotificationArchivedEvent } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/events/user-notification-archived.event';
-import { NotificationPushDeliveredEvent } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/events/notification-push-delivered.event';
+import { UserNotification } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/aggregates/user-notification.aggregate';
+import { UserNotificationReadEvent } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/events/user-notification-read.event';
+import { UserNotificationArchivedEvent } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/events/user-notification-archived.event';
+import { NotificationPushDeliveredEvent } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/events/notification-push-delivered.event';
 import {
   NotificationAlreadyReadError,
   NotificationAlreadyArchivedError,
-} from '@ssapi-toolkit/nestjs-shared-correspondence/domain/errors/correspondence.errors';
+} from '@ssdev-toolkit/nestjs-shared-correspondence/domain/errors/correspondence.errors';
 
 const make = () =>
   UserNotification.create({ notificationId: 'notif-1', userId: 'user-1' });

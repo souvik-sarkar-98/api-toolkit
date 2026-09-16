@@ -1,5 +1,5 @@
 {
-  "name": "@ssapi-toolkit/nestjs-shared-token-vault",
+  "name": "@ssdev-toolkit/nestjs-shared-token-vault",
   "version": "1.0.0",
   "main": "dist/index.js",
   "files": [
@@ -19,8 +19,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@ssapi-toolkit/nestjs-shared-core": "*",
-    "@ssapi-toolkit/nestjs-shared-auth": "*"
+    "@ssdev-toolkit/nestjs-shared-core": "*",
+    "@ssdev-toolkit/nestjs-shared-auth": "*"
   },
   "exports": {
     ".": {

@@ -1,6 +1,6 @@
-import { OAuthAccount } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/aggregates/oauth-account/oauth-account.aggregate';
-import { AccountConnectedEvent } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/events/account-connected.event';
-import { AccountDisconnectedEvent } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/events/account-disconnected.event';
+import { OAuthAccount } from '@ssdev-toolkit/nestjs-shared-token-vault/domain/aggregates/oauth-account/oauth-account.aggregate';
+import { AccountConnectedEvent } from '@ssdev-toolkit/nestjs-shared-token-vault/domain/events/account-connected.event';
+import { AccountDisconnectedEvent } from '@ssdev-toolkit/nestjs-shared-token-vault/domain/events/account-disconnected.event';
 
 const profile = {
   externalId: 'sub-123',

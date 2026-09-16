@@ -1,11 +1,11 @@
 /**
  * MarkUserNotificationReadHandler unit tests.
  */
-import { MarkUserNotificationReadHandler } from '@ssapi-toolkit/nestjs-shared-correspondence/application/commands/mark-user-notification-read/mark-user-notification-read.handler';
-import { MarkUserNotificationReadCommand } from '@ssapi-toolkit/nestjs-shared-correspondence/application/commands/mark-user-notification-read/mark-user-notification-read.command';
-import { IUserNotificationRepository } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/repositories/user-notification.repository';
-import { UserNotificationNotFoundError } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/errors/correspondence.errors';
-import { UserNotification } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/aggregates/user-notification.aggregate';
+import { MarkUserNotificationReadHandler } from '@ssdev-toolkit/nestjs-shared-correspondence/application/commands/mark-user-notification-read/mark-user-notification-read.handler';
+import { MarkUserNotificationReadCommand } from '@ssdev-toolkit/nestjs-shared-correspondence/application/commands/mark-user-notification-read/mark-user-notification-read.command';
+import { IUserNotificationRepository } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/repositories/user-notification.repository';
+import { UserNotificationNotFoundError } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/errors/correspondence.errors';
+import { UserNotification } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/aggregates/user-notification.aggregate';
 
 function makeUN(userId = 'user-1') {
   return UserNotification.create({ notificationId: 'notif-1', userId });

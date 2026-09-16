@@ -1,5 +1,5 @@
 {
-  "name": "@ssapi-toolkit/nestjs-shared-health",
+  "name": "@ssdev-toolkit/nestjs-shared-health",
   "version": "1.0.0",
   "main": "dist/index.js",
   "files": [
@@ -19,9 +19,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@ssapi-toolkit/nestjs-shared-core": "*",
-    "@ssapi-toolkit/nestjs-shared-persistence": "*",
-    "@ssapi-toolkit/nestjs-shared-auth": "*"
+    "@ssdev-toolkit/nestjs-shared-core": "*",
+    "@ssdev-toolkit/nestjs-shared-persistence": "*",
+    "@ssdev-toolkit/nestjs-shared-auth": "*"
   },
   "exports": {
     ".": {

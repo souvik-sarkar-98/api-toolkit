@@ -26,8 +26,8 @@ import {
   ENVELOPE_EXAMPLES,
   Page,
   PaginatedQueryDto,
-} from '@ssapi-toolkit/nestjs-shared-core';
-import { AuthUser, CurrentUser, IgnoreCaptcha, Public, RequirePermissions, StrictThrottle } from '@ssapi-toolkit/nestjs-shared-auth';
+} from '@ssdev-toolkit/nestjs-shared-core';
+import { AuthUser, CurrentUser, IgnoreCaptcha, Public, RequirePermissions, StrictThrottle } from '@ssdev-toolkit/nestjs-shared-auth';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
 import { OAUTH_PROVIDER_REGISTRY } from '../../application/ports/oauth-provider.port';
 import type { IOAuthProvider } from '../../application/ports/oauth-provider.port';

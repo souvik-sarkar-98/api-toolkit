@@ -1,4 +1,4 @@
-import { DomainEvent } from '@ssapi-toolkit/nestjs-shared-core';
+import { DomainEvent } from '@ssdev-toolkit/nestjs-shared-core';
 import type { JsonDocument } from '../aggregates/json-document.aggregate';
 
 export type JsonDocumentCreatedSnapshot = Pick<JsonDocument, 'id' | 'key' | 'namespace'>;

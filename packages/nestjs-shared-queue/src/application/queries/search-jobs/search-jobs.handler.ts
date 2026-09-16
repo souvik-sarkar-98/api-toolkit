@@ -1,6 +1,6 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
-import { BaseFilter, Page } from '@ssapi-toolkit/nestjs-shared-core';
+import { BaseFilter, Page } from '@ssdev-toolkit/nestjs-shared-core';
 import { IQueueJobRepository, QueueJobFilter } from '../../../domain/repositories/queue-job.repository';
 import { QueueJobResponseMapper } from '../../mappers/queue-job-response.mapper';
 import { QueueJobSearchResultDto } from '../../dtos/queue-job.dtos';

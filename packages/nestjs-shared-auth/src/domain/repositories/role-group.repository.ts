@@ -1,4 +1,4 @@
-import { IRepository } from '@ssapi-toolkit/nestjs-shared-core';
+import { IRepository } from '@ssdev-toolkit/nestjs-shared-core';
 import { RoleGroup, RoleGroupFilter } from '../aggregates/role-group/role-group.aggregate';
 
 export const IRoleGroupRepository = Symbol('IRoleGroupRepository');

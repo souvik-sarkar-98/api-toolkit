@@ -1,5 +1,5 @@
 import { Inject, Injectable, Logger, OnApplicationBootstrap } from '@nestjs/common';
-import { QueueFacade } from '@ssapi-toolkit/nestjs-shared-queue';
+import { QueueFacade } from '@ssdev-toolkit/nestjs-shared-queue';
 import { INotificationRepository } from '../../domain/repositories/notification.repository';
 import { IResourceSubscriptionRepository } from '../../domain/repositories/resource-subscription.repository';
 import { CORRESPONDENCE_OPTIONS } from '../../correspondence-options.token';

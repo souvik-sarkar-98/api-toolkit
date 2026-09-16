@@ -7,7 +7,7 @@ import {
   type Type,
 } from '@nestjs/common';
 import { CqrsModule } from '@nestjs/cqrs';
-import { BaseDynamicModule, DynamicModuleAsyncOptions } from '@ssapi-toolkit/nestjs-shared-core';
+import { BaseDynamicModule, DynamicModuleAsyncOptions } from '@ssdev-toolkit/nestjs-shared-core';
 import { GetLivenessHandler } from './application/queries/get-liveness/get-liveness.handler';
 import { GetMetricsHandler } from './application/queries/get-metrics/get-metrics.handler';
 import { GetReadinessHandler } from './application/queries/get-readiness/get-readiness.handler';
@@ -46,7 +46,7 @@ export interface HealthModuleWiringOptions {
   indicators?: Type<IHealthIndicator>[];
   /** Inline probes for checks that need no dependency injection. */
   checks?: HealthCheckDefinition[];
-  /** Set false when the host has no `@ssapi-toolkit/nestjs-shared-persistence` database. Default true. */
+  /** Set false when the host has no `@ssdev-toolkit/nestjs-shared-persistence` database. Default true. */
   databaseIndicator?: boolean;
   /** Set false when the host has no cache configured. Default true. */
   cacheIndicator?: boolean;

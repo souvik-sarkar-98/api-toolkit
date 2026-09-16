@@ -3,7 +3,7 @@ import {
   getUserContext,
   resolveTraceId,
   traceStorage,
-} from '@ssapi-toolkit/nestjs-shared-core';
+} from '@ssdev-toolkit/nestjs-shared-core';
 
 describe('Trace context utilities', () => {
   describe('resolveTraceId()', () => {

@@ -24,8 +24,8 @@ import {
   ApiAutoVoidResponse,
   ApiKeyParam,
   ENVELOPE_EXAMPLES,
-} from '@ssapi-toolkit/nestjs-shared-core';
-import { RequirePermissions, UseApiKey } from '@ssapi-toolkit/nestjs-shared-auth';
+} from '@ssdev-toolkit/nestjs-shared-core';
+import { RequirePermissions, UseApiKey } from '@ssdev-toolkit/nestjs-shared-auth';
 import { TriggerCronJobsCommand } from '../../application/commands/trigger-cron-jobs/trigger-cron-jobs.command';
 import { CreateCronJobCommand } from '../../application/commands/create-cron-job/create-cron-job.command';
 import { UpdateCronJobCommand } from '../../application/commands/update-cron-job/update-cron-job.command';

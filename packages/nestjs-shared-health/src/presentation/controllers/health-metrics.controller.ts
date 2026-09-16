@@ -1,7 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 import { QueryBus } from '@nestjs/cqrs';
 import { ApiOkResponse, ApiOperation, ApiTags } from '@nestjs/swagger';
-import { IgnoreCaptcha, Public } from '@ssapi-toolkit/nestjs-shared-auth';
+import { IgnoreCaptcha, Public } from '@ssdev-toolkit/nestjs-shared-auth';
 import { GetMetricsQuery } from '../../application/queries/get-metrics/get-metrics.query';
 import { MetricsResponseDto } from '../dtos/metrics-response.dto';
 

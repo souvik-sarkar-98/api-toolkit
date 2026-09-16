@@ -1,4 +1,4 @@
-import { BusinessError } from '@ssapi-toolkit/nestjs-shared-core';
+import { BusinessError } from '@ssdev-toolkit/nestjs-shared-core';
 
 export class FormAccessDeniedError extends BusinessError {
   constructor(action: string, formId: string, entityId?: string) {

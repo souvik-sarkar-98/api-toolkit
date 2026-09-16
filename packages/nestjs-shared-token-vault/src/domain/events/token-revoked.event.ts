@@ -1,4 +1,4 @@
-import { DomainEvent } from '@ssapi-toolkit/nestjs-shared-core';
+import { DomainEvent } from '@ssdev-toolkit/nestjs-shared-core';
 import type { OAuthToken } from '../aggregates/oauth-token/oauth-token.aggregate';
 
 export type TokenRevokedSnapshot = Pick<OAuthToken, 'id' | 'provider' | 'email' | 'accountId'>;

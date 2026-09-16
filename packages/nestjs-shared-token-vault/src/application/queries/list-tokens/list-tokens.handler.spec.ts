@@ -1,7 +1,7 @@
-import { ListTokensHandler } from '@ssapi-toolkit/nestjs-shared-token-vault/application/queries/list-tokens/list-tokens.handler';
-import { ListTokensQuery } from '@ssapi-toolkit/nestjs-shared-token-vault/application/queries/list-tokens/list-tokens.query';
-import { EncryptedToken } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/value-objects/encrypted-token.vo';
-import { OAuthToken } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/aggregates/oauth-token/oauth-token.aggregate';
+import { ListTokensHandler } from '@ssdev-toolkit/nestjs-shared-token-vault/application/queries/list-tokens/list-tokens.handler';
+import { ListTokensQuery } from '@ssdev-toolkit/nestjs-shared-token-vault/application/queries/list-tokens/list-tokens.query';
+import { EncryptedToken } from '@ssdev-toolkit/nestjs-shared-token-vault/domain/value-objects/encrypted-token.vo';
+import { OAuthToken } from '@ssdev-toolkit/nestjs-shared-token-vault/domain/aggregates/oauth-token/oauth-token.aggregate';
 
 const SECRET = 'super-secret-key-that-is-at-least-32chars!!';
 const FUTURE = new Date(Date.now() + 3_600_000);

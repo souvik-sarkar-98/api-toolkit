@@ -4,11 +4,11 @@
  * the `or` helper, structured content placeholders and host-supplied theme
  * tokens render correctly.
  */
-import { HandlebarsLayoutRendererAdapter } from '@ssapi-toolkit/nestjs-shared-correspondence/infrastructure/templates/handlebars-layout-renderer.adapter';
-import { EmailLayoutData } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/ports/template.port';
-import { TemplateNotFoundError } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/errors/correspondence.errors';
-import { DEFAULT_EMAIL_THEME } from '@ssapi-toolkit/nestjs-shared-correspondence/email-theme';
-import type { CorrespondenceModuleOptions } from '@ssapi-toolkit/nestjs-shared-correspondence/correspondence.schema';
+import { HandlebarsLayoutRendererAdapter } from '@ssdev-toolkit/nestjs-shared-correspondence/infrastructure/templates/handlebars-layout-renderer.adapter';
+import { EmailLayoutData } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/ports/template.port';
+import { TemplateNotFoundError } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/errors/correspondence.errors';
+import { DEFAULT_EMAIL_THEME } from '@ssdev-toolkit/nestjs-shared-correspondence/email-theme';
+import type { CorrespondenceModuleOptions } from '@ssdev-toolkit/nestjs-shared-correspondence/correspondence.schema';
 
 describe('HandlebarsLayoutRendererAdapter', () => {
   const adapter = new HandlebarsLayoutRendererAdapter();

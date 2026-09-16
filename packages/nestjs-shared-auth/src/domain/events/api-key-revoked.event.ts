@@ -1,4 +1,4 @@
-import { DomainEvent } from '@ssapi-toolkit/nestjs-shared-core';
+import { DomainEvent } from '@ssdev-toolkit/nestjs-shared-core';
 import type { ApiKey } from '../aggregates/api-key/api-key.aggregate';
 
 export type ApiKeyRevokedSnapshot = Pick<ApiKey, 'id' | 'keyId' | 'name'>;

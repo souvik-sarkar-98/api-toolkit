@@ -1,5 +1,5 @@
-import { EncryptedToken } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/value-objects/encrypted-token.vo';
-import { InvalidEncryptedTokenError } from '@ssapi-toolkit/nestjs-shared-token-vault/domain/errors/token-vault.errors';
+import { EncryptedToken } from '@ssdev-toolkit/nestjs-shared-token-vault/domain/value-objects/encrypted-token.vo';
+import { InvalidEncryptedTokenError } from '@ssdev-toolkit/nestjs-shared-token-vault/domain/errors/token-vault.errors';
 
 const SECRET = 'super-secret-key-that-is-at-least-32chars!!';
 

@@ -1,5 +1,5 @@
 {
-  "name": "@ssapi-toolkit/nestjs-shared-persistence",
+  "name": "@ssdev-toolkit/nestjs-shared-persistence",
   "version": "1.0.0",
   "main": "dist/index.js",
   "files": [
@@ -19,7 +19,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@ssapi-toolkit/nestjs-shared-core": "*"
+    "@ssdev-toolkit/nestjs-shared-core": "*"
   },
   "exports": {
     ".": {

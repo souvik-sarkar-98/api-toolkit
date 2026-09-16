@@ -1,4 +1,4 @@
-import { DomainEvent } from '@ssapi-toolkit/nestjs-shared-core';
+import { DomainEvent } from '@ssdev-toolkit/nestjs-shared-core';
 import type { Form } from '../aggregates/form/form.aggregate';
 
 export type FormPublishedSnapshot = Pick<Form, 'id' | 'entityType' | 'key' | 'status' | 'publishedBy'>;

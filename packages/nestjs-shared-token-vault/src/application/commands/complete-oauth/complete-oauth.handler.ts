@@ -1,6 +1,6 @@
 import { CommandHandler, EventBus, ICommandHandler } from '@nestjs/cqrs';
 import { Inject, Injectable, Logger } from '@nestjs/common';
-import { CacheService } from '@ssapi-toolkit/nestjs-shared-persistence';
+import { CacheService } from '@ssdev-toolkit/nestjs-shared-persistence';
 import { CompleteOAuthCommand } from './complete-oauth.command';
 import { OAUTH_PROVIDER_REGISTRY } from '../../ports/oauth-provider.port';
 import type { IOAuthProvider } from '../../ports/oauth-provider.port';

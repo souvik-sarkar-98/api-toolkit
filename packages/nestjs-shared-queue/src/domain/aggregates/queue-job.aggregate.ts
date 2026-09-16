@@ -1,4 +1,4 @@
-import { AggregateRoot } from '@ssapi-toolkit/nestjs-shared-core';
+import { AggregateRoot } from '@ssdev-toolkit/nestjs-shared-core';
 import { JobStatus } from '../enums/job-status.enum';
 import { QueueJobEnqueuedEvent } from '../events/queue-job-enqueued.event';
 import { QueueJobStartedEvent } from '../events/queue-job-started.event';

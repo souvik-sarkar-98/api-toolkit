@@ -1,5 +1,5 @@
 import { randomUUID } from 'crypto';
-import { BaseDomain } from '@ssapi-toolkit/nestjs-shared-core';
+import { BaseDomain } from '@ssdev-toolkit/nestjs-shared-core';
 import type { CustomFieldValueParsed } from '../../value-objects/field-condition/field-condition.vo';
 
 /**

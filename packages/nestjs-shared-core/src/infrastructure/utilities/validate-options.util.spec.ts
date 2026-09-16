@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { validateModuleOptions } from '@ssapi-toolkit/nestjs-shared-core';
+import { validateModuleOptions } from '@ssdev-toolkit/nestjs-shared-core';
 
 const TestSchema = z.object({
   name: z.string().min(1, 'name is required'),

@@ -1,4 +1,4 @@
-import { BusinessError } from '@ssapi-toolkit/nestjs-shared-core';
+import { BusinessError } from '@ssdev-toolkit/nestjs-shared-core';
 
 /**
  * Raised when a health indicator exceeds its allotted budget. The runner

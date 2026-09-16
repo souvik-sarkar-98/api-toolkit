@@ -3,7 +3,7 @@ import { Inject, Injectable, Logger } from '@nestjs/common';
 import {
   IOAuthAccessTokenPort,
   OAUTH_ACCESS_TOKEN_PORT,
-} from '@ssapi-toolkit/nestjs-shared-core';
+} from '@ssdev-toolkit/nestjs-shared-core';
 import { OAuth2Client } from 'googleapis-common';
 import { IEmailSenderPort, EmailMessage, EmailAttachment } from '../../domain/ports/email-sender.port';
 import { CORRESPONDENCE_OPTIONS } from '../../correspondence-options.token';

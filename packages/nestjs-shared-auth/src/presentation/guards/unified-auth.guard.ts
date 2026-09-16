@@ -20,7 +20,7 @@ import { USE_API_KEY } from '../decorators/use-api-key.decorator';
 import { EXPECTED_RECAPTCHA_ACTION_KEY } from '../decorators/expected-recaptcha-action.decorator';
 import { AUTH_OPTIONS } from '../../infrastructure/auth-options.token';
 import { AuthModuleOptions } from '../../auth-options';
-import { setUserContext } from '@ssapi-toolkit/nestjs-shared-core';
+import { setUserContext } from '@ssdev-toolkit/nestjs-shared-core';
 
 @Injectable()
 export class UnifiedAuthGuard implements CanActivate {

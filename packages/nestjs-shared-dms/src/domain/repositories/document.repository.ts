@@ -1,4 +1,4 @@
-import { IRepository } from '@ssapi-toolkit/nestjs-shared-core';
+import { IRepository } from '@ssdev-toolkit/nestjs-shared-core';
 import { Document } from '../aggregates/document.aggregate';
 
 export interface DocumentFilter {

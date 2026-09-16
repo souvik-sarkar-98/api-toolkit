@@ -2,7 +2,7 @@ import { Inject, Injectable, Logger } from '@nestjs/common';
 import {
   IOAuthAccessTokenPort,
   OAUTH_ACCESS_TOKEN_PORT,
-} from '@ssapi-toolkit/nestjs-shared-core';
+} from '@ssdev-toolkit/nestjs-shared-core';
 import { IEmailSenderPort, EmailMessage } from '../../domain/ports/email-sender.port';
 import { GmailEmailAdapter } from './gmail-email.adapter';
 import { SmtpEmailAdapter } from './smtp-email.adapter';

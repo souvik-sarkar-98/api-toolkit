@@ -1,14 +1,14 @@
 /**
  * UpdateChannelConfigHandler unit tests.
  */
-import { UpdateChannelConfigHandler } from '@ssapi-toolkit/nestjs-shared-correspondence/application/commands/update-channel-config/update-channel-config.handler';
-import { UpdateChannelConfigCommand } from '@ssapi-toolkit/nestjs-shared-correspondence/application/commands/update-channel-config/update-channel-config.command';
-import { IResourceSubscriptionRepository } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/repositories/resource-subscription.repository';
-import { SubscriptionNotFoundError } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/errors/correspondence.errors';
-import { ResourceSubscription } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/aggregates/resource-subscription.aggregate';
-import { ChannelType } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/channel-type.enum';
-import { EmailRole } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/email-role.enum';
-import { SubscribedVia } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/subscribed-via.enum';
+import { UpdateChannelConfigHandler } from '@ssdev-toolkit/nestjs-shared-correspondence/application/commands/update-channel-config/update-channel-config.handler';
+import { UpdateChannelConfigCommand } from '@ssdev-toolkit/nestjs-shared-correspondence/application/commands/update-channel-config/update-channel-config.command';
+import { IResourceSubscriptionRepository } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/repositories/resource-subscription.repository';
+import { SubscriptionNotFoundError } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/errors/correspondence.errors';
+import { ResourceSubscription } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/aggregates/resource-subscription.aggregate';
+import { ChannelType } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/enums/channel-type.enum';
+import { EmailRole } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/enums/email-role.enum';
+import { SubscribedVia } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/enums/subscribed-via.enum';
 
 function makeUserSub(userId = 'user-1') {
   return ResourceSubscription.createUserSubscription({

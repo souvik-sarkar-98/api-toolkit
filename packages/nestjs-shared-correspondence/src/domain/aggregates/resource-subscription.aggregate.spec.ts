@@ -1,12 +1,12 @@
 /**
  * ResourceSubscription aggregate — pure domain unit tests.
  */
-import { ResourceSubscription } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/aggregates/resource-subscription.aggregate';
-import { SubscriberType } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/subscriber-type.enum';
-import { SubscribedVia } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/subscribed-via.enum';
-import { ChannelType } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/channel-type.enum';
-import { EmailRole } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/email-role.enum';
-import { SubscriptionDeactivatedEvent } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/events/subscription-deactivated.event';
+import { ResourceSubscription } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/aggregates/resource-subscription.aggregate';
+import { SubscriberType } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/enums/subscriber-type.enum';
+import { SubscribedVia } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/enums/subscribed-via.enum';
+import { ChannelType } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/enums/channel-type.enum';
+import { EmailRole } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/enums/email-role.enum';
+import { SubscriptionDeactivatedEvent } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/events/subscription-deactivated.event';
 
 const makeUser = () =>
   ResourceSubscription.createUserSubscription({

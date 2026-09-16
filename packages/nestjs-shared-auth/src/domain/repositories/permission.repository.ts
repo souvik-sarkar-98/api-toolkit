@@ -1,4 +1,4 @@
-import { IRepository } from '@ssapi-toolkit/nestjs-shared-core';
+import { IRepository } from '@ssdev-toolkit/nestjs-shared-core';
 import { Permission, PermissionFilter } from '../aggregates/permission/permission.aggregate';
 
 export const IPermissionRepository = Symbol('IPermissionRepository');

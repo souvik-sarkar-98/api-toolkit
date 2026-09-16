@@ -1,7 +1,7 @@
 import { Inject, Injectable, Optional } from '@nestjs/common';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
 import { IUserRolePort } from '../../domain/ports/user-role.port';
-import { IUserLookupPort, UserInfo } from '@ssapi-toolkit/nestjs-shared-core';
+import { IUserLookupPort, UserInfo } from '@ssdev-toolkit/nestjs-shared-core';
 import { GrantUserRoleCommand } from '../commands/grant-user-role/grant-user-role.command';
 import { RevokeUserRoleCommand } from '../commands/revoke-user-role/revoke-user-role.command';
 import { ListUserRolesQuery } from '../queries/list-user-roles/list-user-roles.query';

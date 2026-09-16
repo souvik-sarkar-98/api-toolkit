@@ -1,6 +1,6 @@
 import { Inject, Injectable, Logger } from "@nestjs/common";
 import { EventsHandler, IEventHandler } from "@nestjs/cqrs";
-import { ErrorResponse, getTraceId, TechnicalErrorPayload } from "@ssapi-toolkit/nestjs-shared-core";
+import { ErrorResponse, getTraceId, TechnicalErrorPayload } from "@ssdev-toolkit/nestjs-shared-core";
 import { IAlertPort } from "../../../../domain/ports/alert.port";
 import { AlertMessage } from "../../../../domain/value-objects/alert-message.vo";
 import { AppTechnicalError } from "../../../events/app-technical-error.event";

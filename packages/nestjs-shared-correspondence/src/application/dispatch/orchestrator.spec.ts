@@ -12,12 +12,12 @@
  *  - dispatchQueue.enqueue is called with correct dispatchId, sendEmail, sendPush flags
  */
 import { Logger } from '@nestjs/common';
-import { CorrespondenceOrchestrator } from '@ssapi-toolkit/nestjs-shared-correspondence/application/dispatch/correspondence-orchestrator';
-import { NotificationSpec } from '@ssapi-toolkit/nestjs-shared-correspondence/application/model/notification-spec';
-import { SubscriptionResolutionService } from '@ssapi-toolkit/nestjs-shared-correspondence/application/dispatch/subscription-resolution.service';
-import { INotificationRepository } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/repositories/notification.repository';
-import { IDispatchQueuePort } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/ports/dispatch-queue.port';
-import { NotificationType } from '@ssapi-toolkit/nestjs-shared-correspondence/domain/enums/notification-type.enum';
+import { CorrespondenceOrchestrator } from '@ssdev-toolkit/nestjs-shared-correspondence/application/dispatch/correspondence-orchestrator';
+import { NotificationSpec } from '@ssdev-toolkit/nestjs-shared-correspondence/application/model/notification-spec';
+import { SubscriptionResolutionService } from '@ssdev-toolkit/nestjs-shared-correspondence/application/dispatch/subscription-resolution.service';
+import { INotificationRepository } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/repositories/notification.repository';
+import { IDispatchQueuePort } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/ports/dispatch-queue.port';
+import { NotificationType } from '@ssdev-toolkit/nestjs-shared-correspondence/domain/enums/notification-type.enum';
 
 // ── Mocks ──────────────────────────────────────────────────────────────────
 
