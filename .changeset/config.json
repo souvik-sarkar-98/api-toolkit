@@ -2,10 +2,27 @@
   "$schema": "https://unpkg.com/@changesets/config@3.1.2/schema.json",
   "changelog": "@changesets/cli/changelog",
   "commit": false,
-  "fixed": [
-    
+  "fixed": [],
+  "linked": [
+    [
+      "@ssdev-toolkit/forms-core",
+      "@ssdev-toolkit/forms-react",
+      "@ssdev-toolkit/forms-angular"
+    ],
+    [
+      "@ssdev-toolkit/comment-core",
+      "@ssdev-toolkit/comment-react",
+      "@ssdev-toolkit/comment-angular"
+    ],
+    [
+      "@ssdev-toolkit/list-dashboard-core",
+      "@ssdev-toolkit/list-dashboard-angular"
+    ],
+    [
+      "@ssdev-toolkit/auth-core",
+      "@ssdev-toolkit/auth-angular"
+    ]
   ],
-  "linked": [],
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
